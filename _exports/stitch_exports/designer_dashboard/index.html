@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Designer Dashboard | Noor Collective</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error": "#ba1a1a",
+                        "primary": "#735c00",
+                        "surface-container": "#efefd7",
+                        "surface-dim": "#dbdcc3",
+                        "surface-variant": "#e4e4cc",
+                        "surface-container-highest": "#e4e4cc",
+                        "secondary-fixed": "#e4e2e1",
+                        "on-secondary-container": "#656464",
+                        "inverse-on-surface": "#f2f2d9",
+                        "background": "#fbfbe2",
+                        "inverse-primary": "#e9c349",
+                        "tertiary-fixed-dim": "#cac99f",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eaead1",
+                        "tertiary-container": "#b6b58c",
+                        "on-tertiary-fixed-variant": "#484828",
+                        "on-primary-fixed": "#241a00",
+                        "primary-container": "#d4af37",
+                        "secondary-container": "#e4e2e1",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#60603e",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#1d1d03",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "secondary": "#5f5e5e",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#735c00",
+                        "outline-variant": "#d0c5af",
+                        "tertiary-fixed": "#e6e5b9",
+                        "on-tertiary-container": "#474727",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-primary-container": "#554300",
+                        "outline": "#7f7663",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#574500",
+                        "surface-container-low": "#f5f5dc",
+                        "surface": "#fbfbe2",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fbfbe2",
+                        "inverse-surface": "#303221",
+                        "primary-fixed": "#ffe088",
+                        "on-background": "#1b1d0e",
+                        "on-surface": "#1b1d0e"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Manrope"],
+                        "arabic": ["Amiri"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #fbfbe2; }
+        .glass-nav { backdrop-filter: blur(12px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 backdrop-blur-md flex justify-between items-center px-8 py-4">
+<div class="flex items-center gap-8">
+<span class="text-lg font-bold tracking-widest text-[#1b1d0e] font-headline uppercase">THE ETHEREAL ATELIER</span>
+<div class="hidden md:flex gap-6 items-center">
+<span class="text-xs font-headline font-bold tracking-[0.1em] uppercase text-primary">Dashboard</span>
+<span class="text-xs font-headline font-bold tracking-[0.1em] uppercase text-on-background/40 hover:text-primary transition-colors cursor-pointer">Collections</span>
+<span class="text-xs font-headline font-bold tracking-[0.1em] uppercase text-on-background/40 hover:text-primary transition-colors cursor-pointer">Analytics</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary transition-transform active:scale-95" data-icon="search">search</button>
+<button class="material-symbols-outlined text-primary transition-transform active:scale-95" data-icon="notifications">notifications</button>
+<div class="flex items-center gap-3 pl-6 border-l border-outline-variant/20">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-bold font-headline leading-tight">Sultana Al-Saud</p>
+<p class="text-[10px] text-primary font-medium">Gold Member Designer</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Sultana Al-Saud" class="w-full h-full object-cover" data-alt="high-fashion portrait of a sophisticated woman with elegant gold jewelry and soft neutral makeup in warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOlH4JEdf2NtUVNSjemE-qUxk97CZu7XNSknHZDUh-zYJD1Obxc69bKU2wtm7mda5-k0sciNHvlgSSVgo9fizdU4lPCJPaldCXt9ARgjlPp68Q185FSdH8oieDxPYHOgTT4nnG2BFFm45Y3zeBPelPh0KDDlhxR70WQPO1ZRLx_S7s7K2o4h5rAxeKa_K0zFA7U7Oovgpcbe9ICSYhuoVkerRkkEuRK_a2JgUtFXALm_GFK4f9jkYzeEAOd5hb2C2wz6f5k105Og"/>
+</div>
+</div>
+</div>
+</nav>
+<div class="flex pt-20 h-screen">
+<!-- Sidebar Navigation (Mandatory Mapping) -->
+<aside class="w-80 h-full bg-[#fbfbe2] flex flex-col p-8 gap-4 hidden lg:flex">
+<div class="flex flex-col gap-2 mb-8">
+<h2 class="text-xs font-bold tracking-[0.2em] uppercase text-on-background/40 font-headline">Main Menu</h2>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-4 p-4 bg-surface-container-low text-primary rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-headline font-semibold text-base tracking-tight">Dashboard</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-background hover:bg-surface-container-low/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="flare">flare</span>
+<span class="font-headline font-semibold text-base tracking-tight">New Arrivals</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-background hover:bg-surface-container-low/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="styler">styler</span>
+<span class="font-headline font-semibold text-base tracking-tight">Abayas</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-background hover:bg-surface-container-low/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="local_mall">local_mall</span>
+<span class="font-headline font-semibold text-base tracking-tight">Orders Tracking</span>
+</a>
+</div>
+</div>
+<div class="mt-auto p-6 bg-surface-container-low rounded-3xl flex flex-col gap-4">
+<p class="text-[11px] font-bold font-headline uppercase tracking-widest text-on-background/60">Subscription</p>
+<div class="flex items-center gap-3">
+<div class="p-2 bg-primary rounded-lg text-on-primary">
+<span class="material-symbols-outlined text-sm" data-icon="diamond">diamond</span>
+</div>
+<div>
+<p class="text-xs font-bold font-headline">Gold Tier</p>
+<p class="text-[10px] text-on-background/60">Renewal in 14 days</p>
+</div>
+</div>
+<button class="w-full py-3 bg-primary-container text-on-primary-container text-xs font-bold font-headline rounded-full hover:opacity-90 transition-opacity">
+                    UPGRADE PLAN
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto bg-surface-container-low p-8 no-scrollbar">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-headline font-extrabold tracking-tight text-on-background">Atelier Overview</h1>
+<p class="text-secondary font-body italic">Crafting elegance, one thread at a time.</p>
+</div>
+<div class="flex gap-4">
+<div class="px-6 py-3 bg-surface-container-lowest rounded-2xl flex items-center gap-4 shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="trending_up">trending_up</span>
+<div>
+<p class="text-[10px] uppercase font-bold tracking-widest text-on-background/40 font-headline">Daily Growth</p>
+<p class="text-lg font-bold font-headline">+12.4%</p>
+</div>
+</div>
+<button class="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-sm rounded-full shadow-lg hover:scale-[1.02] transition-transform">
+                        + NEW COLLECTION
+                    </button>
+</div>
+</div>
+<!-- Bento Grid Stats & Chart -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
+<!-- Earnings Summary Chart Area -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-3xl p-8 flex flex-col gap-8 shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-headline font-bold">Earnings Performance</h3>
+<p class="text-xs text-on-background/60">Revenue trajectory for the current season</p>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-[10px] font-bold font-headline">WEEKLY</span>
+<span class="px-3 py-1 text-[10px] font-bold font-headline text-on-background/40">MONTHLY</span>
+</div>
+</div>
+<div class="h-64 flex items-end justify-between gap-4 px-4">
+<!-- Simulated Chart -->
+<div class="flex-1 bg-surface-container-high rounded-t-xl h-[40%] relative group">
+<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl"></div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-xl h-[60%] relative group">
+<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl"></div>
+</div>
+<div class="flex-1 bg-primary-container rounded-t-xl h-[95%] relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-on-background text-on-primary text-[10px] px-2 py-1 rounded font-bold">SAR 42k</div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-xl h-[75%] relative group">
+<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl"></div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-xl h-[55%] relative group">
+<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl"></div>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-t-xl h-[85%] relative group">
+<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl"></div>
+</div>
+</div>
+</div>
+<!-- Quick Stats Column -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="flex-1 bg-primary-container/10 border border-primary/10 rounded-3xl p-6 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance_wallet">account_balance_wallet</span>
+<div>
+<p class="text-xs font-bold font-headline uppercase tracking-widest text-primary/60">Pending Payout</p>
+<p class="text-3xl font-headline font-extrabold text-primary">SAR 18,240</p>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-3xl p-6 flex flex-col justify-between shadow-sm">
+<span class="material-symbols-outlined text-on-background/40 text-3xl" data-icon="shopping_bag">shopping_bag</span>
+<div>
+<p class="text-xs font-bold font-headline uppercase tracking-widest text-on-background/40">Active Orders</p>
+<p class="text-3xl font-headline font-extrabold">124</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Form & Table Container -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start mb-24">
+<!-- Add/Edit Product Form -->
+<section class="xl:col-span-5 bg-surface-container-lowest rounded-3xl p-8 shadow-sm">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-xl font-headline font-bold">Designer Console</h3>
+<span class="text-[10px] bg-surface-container-high text-on-surface px-3 py-1 rounded-full font-bold uppercase tracking-tighter">Edit Mode</span>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-[11px] font-bold font-headline uppercase tracking-widest text-on-background/60">Product Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl p-4 text-sm font-body focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all" type="text" value="Desert Silk Abaya - Sand Edition"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-[11px] font-bold font-headline uppercase tracking-widest text-on-background/60">Base Price (SAR)</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl p-4 text-sm font-body focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all" type="number" value="1250"/>
+</div>
+<div class="space-y-2">
+<label class="text-[11px] font-bold font-headline uppercase tracking-widest text-on-background/60">Collection</label>
+<select class="w-full bg-surface-container-low border-none rounded-2xl p-4 text-sm font-body focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all">
+<option>Summer Nomad '24</option>
+<option>Evening Grace</option>
+<option>Heritage Threads</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[11px] font-bold font-headline uppercase tracking-widest text-on-background/60">Product Imagery</label>
+<div class="border-2 border-dashed border-outline-variant/30 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 bg-surface-container-low/30 hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<div class="text-center">
+<p class="text-xs font-bold font-headline">Drop editorial shots here</p>
+<p class="text-[10px] text-on-background/40">Min 2400x3200px (4:5 Ratio Recommended)</p>
+</div>
+</div>
+<div class="flex gap-2 mt-4">
+<div class="w-16 h-20 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="folded premium silk fabric in champagne color with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARFhDvxhQeidKN22NeKnrfrxn2W-jWlzvuQbMNuGlcipUC4vESCA-w43uc7tHlFfV5vISUhl0ZTGE-63RYBzuCg69X4qKlDO8yx94Kn3w3Pc94SQC-LvDUmglS6q-hWRpIjidwKqG9zCXhUSGsTS5cdZqJMFO9F193xK6nJ5qc6uaeZD29yQJgmsqBsc5Nj5FPBEeyqYUb6TsonklWjIYCvRbyIyBHTilxIyPmLPTmA3vPX7qEwiiZHiD3On_wstmw7NmtowwIrw"/>
+</div>
+<div class="w-16 h-20 rounded-xl overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="detailed texture of embroidered gold thread on ivory linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUZH11wwhBCLvwk7m62NKmF1DfbtF-MrK6K1PRwSyj828NWL_OnF4sl1duaCDMOPE7j4qXiLzqCIuuOATTZyAgZYymRnFFr6ZCI-spFnPwYFe05Gyba3z4iGKaoohhKHxTRDdeghDGsE6BsXUHs8-cob3Ymf4cIKpWFI9ewFmCfJSC2ltIEyVuixJyou28qsAtwbdc6NyoOc_tkzpsrglnZbExgFoehU0Wn8Tn1D4cRhjFfARoPAqZEo_KJGoAAr-Xpn5csj0eqA"/>
+</div>
+<div class="w-16 h-20 rounded-xl bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-background/20" data-icon="add">add</span>
+</div>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="flex-1 py-4 bg-primary text-on-primary font-headline font-bold text-sm rounded-full shadow-lg hover:opacity-90 transition-opacity" type="submit">
+                                PUBLISH UPDATES
+                            </button>
+<button class="px-8 py-4 bg-surface-container-high text-on-background font-headline font-bold text-sm rounded-full hover:bg-surface-container-highest transition-colors" type="button">
+                                DISCARD
+                            </button>
+</div>
+</form>
+</section>
+<!-- Orders Tracking Table -->
+<section class="xl:col-span-7 bg-surface-container-lowest rounded-3xl p-8 shadow-sm h-full">
+<div class="flex justify-between items-center mb-10">
+<h3 class="text-xl font-headline font-bold">Live Order Flow</h3>
+<div class="flex gap-4">
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-background/40 text-sm" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full text-xs font-body focus:ring-1 focus:ring-primary/20" placeholder="Filter by ID..." type="text"/>
+</div>
+<button class="p-2 bg-surface-container-low rounded-lg text-on-background/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="border-b border-outline-variant/10">
+<tr class="text-[10px] font-headline font-bold uppercase tracking-widest text-on-background/40">
+<th class="pb-4 px-2">Order Ref</th>
+<th class="pb-4 px-2">Client</th>
+<th class="pb-4 px-2">Item</th>
+<th class="pb-4 px-2">Amount</th>
+<th class="pb-4 px-2">Status</th>
+<th class="pb-4 px-2">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/5">
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-5 px-2">
+<p class="text-xs font-bold font-headline">#NC-8821</p>
+<p class="text-[9px] text-on-background/40">12 mins ago</p>
+</td>
+<td class="py-5 px-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-[10px] font-bold">DA</div>
+<p class="text-xs font-medium">Dana Al-Omari</p>
+</div>
+</td>
+<td class="py-5 px-2">
+<p class="text-xs text-on-background/80 truncate max-w-[120px]">Midnight Velvet Abaya</p>
+</td>
+<td class="py-5 px-2 font-headline font-bold text-xs">SAR 2,450</td>
+<td class="py-5 px-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[9px] font-bold uppercase tracking-tighter rounded-full">Processing</span>
+</td>
+<td class="py-5 px-2">
+<button class="material-symbols-outlined text-on-background/40 hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</td>
+</tr>
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-5 px-2">
+<p class="text-xs font-bold font-headline">#NC-8819</p>
+<p class="text-[9px] text-on-background/40">1 hour ago</p>
+</td>
+<td class="py-5 px-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center text-[10px] font-bold">RK</div>
+<p class="text-xs font-medium">Reem Khalid</p>
+</div>
+</td>
+<td class="py-5 px-2">
+<p class="text-xs text-on-background/80 truncate max-w-[120px]">Linen Nomad Set</p>
+</td>
+<td class="py-5 px-2 font-headline font-bold text-xs">SAR 890</td>
+<td class="py-5 px-2">
+<span class="px-3 py-1 bg-green-500/10 text-green-700 text-[9px] font-bold uppercase tracking-tighter rounded-full">Shipped</span>
+</td>
+<td class="py-5 px-2">
+<button class="material-symbols-outlined text-on-background/40 hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</td>
+</tr>
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-5 px-2">
+<p class="text-xs font-bold font-headline">#NC-8815</p>
+<p class="text-[9px] text-on-background/40">3 hours ago</p>
+</td>
+<td class="py-5 px-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/30 flex items-center justify-center text-[10px] font-bold">HA</div>
+<p class="text-xs font-medium">Hessa A.</p>
+</div>
+</td>
+<td class="py-5 px-2">
+<p class="text-xs text-on-background/80 truncate max-w-[120px]">Custom Bridal Hijab</p>
+</td>
+<td class="py-5 px-2 font-headline font-bold text-xs">SAR 3,100</td>
+<td class="py-5 px-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-background/40 text-[9px] font-bold uppercase tracking-tighter rounded-full">Delivered</span>
+</td>
+<td class="py-5 px-2">
+<button class="material-symbols-outlined text-on-background/40 hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</td>
+</tr>
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-5 px-2">
+<p class="text-xs font-bold font-headline">#NC-8812</p>
+<p class="text-[9px] text-on-background/40">Yesterday</p>
+</td>
+<td class="py-5 px-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-[10px] font-bold">MA</div>
+<p class="text-xs font-medium">Maha Al-Sudairi</p>
+</div>
+</td>
+<td class="py-5 px-2">
+<p class="text-xs text-on-background/80 truncate max-w-[120px]">Summer Silk Thobe</p>
+</td>
+<td class="py-5 px-2 font-headline font-bold text-xs">SAR 1,800</td>
+<td class="py-5 px-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-background/40 text-[9px] font-bold uppercase tracking-tighter rounded-full">Delivered</span>
+</td>
+<td class="py-5 px-2">
+<button class="material-symbols-outlined text-on-background/40 hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex justify-between items-center">
+<p class="text-[10px] text-on-background/40 font-medium">Showing 4 of 1,240 results</p>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-background/40 hover:bg-white transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary text-[10px] font-bold">1</button>
+<button class="w-8 h-8 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-background/40 hover:bg-white transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Mobile Navigation Bar (Mandatory Shell Visibility Check) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#fbfbe2]/80 backdrop-blur-md z-50 rounded-t-[24px] shadow-[0px_-10px_30px_rgba(27,29,14,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#735c00] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/40" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/40" href="#">
+<span class="material-symbols-outlined" data-icon="local_mall">local_mall</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/40" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</div>
+</body></html>

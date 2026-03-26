@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Noor Collective | Admin Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "error": "#ba1a1a",
+                "primary": "#735c00",
+                "surface-container": "#efefd7",
+                "surface-dim": "#dbdcc3",
+                "surface-variant": "#e4e4cc",
+                "surface-container-highest": "#e4e4cc",
+                "secondary-fixed": "#e4e2e1",
+                "on-secondary-container": "#656464",
+                "inverse-on-surface": "#f2f2d9",
+                "background": "#fbfbe2",
+                "inverse-primary": "#e9c349",
+                "tertiary-fixed-dim": "#cac99f",
+                "on-surface-variant": "#4d4635",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#eaead1",
+                "tertiary-container": "#b6b58c",
+                "on-tertiary-fixed-variant": "#484828",
+                "on-primary-fixed": "#241a00",
+                "primary-container": "#d4af37",
+                "secondary-container": "#e4e2e1",
+                "error-container": "#ffdad6",
+                "tertiary": "#60603e",
+                "on-secondary-fixed-variant": "#474747",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed": "#1d1d03",
+                "secondary-fixed-dim": "#c8c6c6",
+                "secondary": "#5f5e5e",
+                "on-secondary-fixed": "#1b1c1c",
+                "on-primary": "#ffffff",
+                "surface-tint": "#735c00",
+                "outline-variant": "#d0c5af",
+                "tertiary-fixed": "#e6e5b9",
+                "on-tertiary-container": "#474727",
+                "primary-fixed-dim": "#e9c349",
+                "on-primary-container": "#554300",
+                "outline": "#7f7663",
+                "on-error": "#ffffff",
+                "on-primary-fixed-variant": "#574500",
+                "surface-container-low": "#f5f5dc",
+                "surface": "#fbfbe2",
+                "on-error-container": "#93000a",
+                "surface-bright": "#fbfbe2",
+                "inverse-surface": "#303221",
+                "primary-fixed": "#ffe088",
+                "on-background": "#1b1d0e",
+                "on-surface": "#1b1d0e"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Be Vietnam Pro"],
+                "label": ["Manrope"],
+                "arabic": ["Amiri"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fbfbe2;
+            color: #1b1d0e;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(27, 29, 14, 0.06);
+        }
+        .glass-panel {
+            background: rgba(251, 251, 226, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<div class="flex min-h-screen">
+<!-- Sidebar Navigation -->
+<aside class="w-80 h-screen fixed left-0 top-0 bg-surface-container-low z-40 hidden md:block">
+<div class="flex flex-col h-full p-8 gap-10">
+<!-- Brand Logo -->
+<div class="py-4">
+<h1 class="font-headline text-xl font-extrabold tracking-widest text-on-background">THE ETHEREAL ATELIER</h1>
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary font-bold">Admin Headquarters</span>
+</div>
+<!-- Profile Anchor -->
+<div class="flex items-center gap-4 p-4 rounded-3xl bg-surface-container-highest/30">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a high-end fashion executive in minimalist studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDquaa9uKE3rsFGMy78nwNwmqCIRml5B0h1SJOFbBCUb0IVSEB4nX1Vp5iHXWqhTutLJcLQYvh5c4wF7H6u61FbKUN1MMovIyLUOuHJbTab3oXM6IN3Zh68lp5NbyyuDA25qNsbb2b7JuPDEwOZKI_-IgH9mrV9XZ1YJ0wiCdob349HZBICnYd013UFiUNZ1U1Uvj7ByTkg39QJ5VBPd841j9DU-79rabsdK36srcTZAeDL24A6nb_TIWfYmrykqZtTUKnZFWTdw"/>
+</div>
+<div>
+<p class="font-headline font-semibold text-base tracking-tight text-on-surface">Sultana Al-Saud</p>
+<p class="font-body text-xs text-on-surface-variant/70">Gold Member Administrator</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 px-6 py-4 bg-surface-container-highest text-primary rounded-xl transition-all duration-300 font-headline font-semibold text-base" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-on-surface hover:bg-surface-container-high transition-all duration-300 rounded-xl font-headline font-semibold text-base" href="#">
+<span class="material-symbols-outlined">group</span>
+<span>Users &amp; Vendors</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-on-surface hover:bg-surface-container-high transition-all duration-300 rounded-xl font-headline font-semibold text-base" href="#">
+<span class="material-symbols-outlined">check_circle</span>
+<span>Product Approvals</span>
+<span class="ml-auto bg-primary-container text-on-primary-container text-[10px] px-2 py-0.5 rounded-full">12</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-on-surface hover:bg-surface-container-high transition-all duration-300 rounded-xl font-headline font-semibold text-base" href="#">
+<span class="material-symbols-outlined">insights</span>
+<span>Analytics</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-on-surface hover:bg-surface-container-high transition-all duration-300 rounded-xl font-headline font-semibold text-base" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Platform Settings</span>
+</a>
+</nav>
+<!-- Support Footer -->
+<div class="mt-auto p-6 rounded-3xl bg-primary text-on-primary flex flex-col gap-3">
+<p class="font-headline text-sm font-bold">Concierge Support</p>
+<p class="text-xs opacity-80 leading-relaxed">Dedicated administrative assistance is available 24/7.</p>
+<button class="mt-2 py-2 px-4 bg-on-primary text-primary rounded-full text-xs font-bold tracking-tight uppercase">Contact Atelier</button>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-80 p-6 md:p-12 pb-32">
+<!-- Header -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-on-background mb-2">Morning, Sultana</h2>
+<p class="text-on-surface-variant font-body text-lg">Your atelier's performance at a glance today.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="close-up of young professional male portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB063JOawuPPEhzA49-A8dwYQPL-u8SUL1vrHCjxmR0lfHCZnzaI3zXVBcx7K27shgADBlQhVz2qJUOXHAgKDQ4zZg58VJKyUHDBEN4yIOXmbZ6HvzjUD3BYwpBj2kMbmzKi2HYyCLV4Va9lFHT0op9OCQqkrn4eNSop-Orgc7Np0jj794x7c4YvMix1t5MxMK5qbkFq10YV2vymxhH-k4u461CfIAJyAXpa6j4KSYIwycTJhKIIu9aor3uOIE7L8HQkoTiePSgJQ"/>
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="headshot of smiling modern woman with soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArFTgodMo8_0LsaWT9r5SRwEFG44J-TQtOfpK3ondEiM2OYw8zU7_rlJI6jx-WoG4krZhWHq1rANQtex02oqZTM45YbxE94aJOIPiBZO6sL3uujGqMqQ8uWs9PblqZFAnBAMRoIvwFnYOBTaqGH51fxKUSM77anriLhoNFwV_r241oGoYcHmnDUDHwjcFh6sUOzPP75NgrrC8E9nCUdlsBfKDsgajr6jIuf7hTiUTrkpOPZMN1MKI6LfsF5bUplTVZXP7fOru9dg"/>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-background flex items-center justify-center text-[10px] font-bold text-primary">+8</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label text-sm font-bold tracking-widest uppercase shadow-xl hover:opacity-90 transition-opacity">
+                        Generate Report
+                    </button>
+</div>
+</header>
+<!-- Bento Analytics Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
+<!-- Main Stat: Sales -->
+<div class="md:col-span-8 bg-surface-container-low rounded-3xl p-10 editorial-shadow relative overflow-hidden flex flex-col justify-between min-h-[400px]">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div class="relative z-10 flex justify-between items-start">
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Revenue Flow</span>
+<h3 class="font-headline text-5xl font-extrabold mt-2">$284,920.00</h3>
+<p class="text-on-surface-variant text-sm mt-2 font-medium flex items-center gap-2">
+<span class="text-primary font-bold">+12.4%</span> vs last month
+                            </p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 rounded-full bg-surface text-xs font-bold text-on-surface">Weekly</button>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-bold">Monthly</button>
+</div>
+</div>
+<!-- Mockup Chart Area -->
+<div class="mt-12 h-48 w-full flex items-end gap-2">
+<div class="bg-primary-container w-full h-[40%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+<div class="bg-primary-container w-full h-[60%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+<div class="bg-primary-container w-full h-[55%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+<div class="bg-primary-container w-full h-[85%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+<div class="bg-primary-container w-full h-[70%] rounded-t-lg opacity-100"></div>
+<div class="bg-primary-container w-full h-[95%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+<div class="bg-primary-container w-full h-[65%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+<div class="bg-primary-container w-full h-[45%] rounded-t-lg opacity-40 hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<!-- Traffic Sources -->
+<div class="md:col-span-4 bg-surface-container-highest/20 rounded-3xl p-10 editorial-shadow flex flex-col justify-between">
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface-variant font-bold">Visitor Reach</span>
+<h3 class="font-headline text-3xl font-bold mt-2">42.8k</h3>
+</div>
+<div class="space-y-6 mt-8">
+<div>
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
+<span>Organic Search</span>
+<span>65%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[65%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
+<span>Social Media</span>
+<span>24%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[24%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
+<span>Direct</span>
+<span>11%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-[11%]"></div>
+</div>
+</div>
+</div>
+<button class="mt-10 text-primary text-xs font-bold tracking-widest uppercase flex items-center gap-2 group">
+                        Detailed Audit
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Pending Approvals Section -->
+<section class="mb-16">
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-headline text-2xl font-bold tracking-tight">Curatorial Queue</h3>
+<button class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest border-b border-on-surface-variant/20 pb-1">Review All</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Approval Card 1 -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 editorial-shadow group hover:-translate-y-1 transition-transform duration-500">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="ethereal silk abaya in desert sand color flowing in wind against minimalist white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfu_RbjRx1ZIC9kpYWBggJjBlsXV8gNAWFGdLrbffNV9Z4bprrtc4gx2-DKlJj6GrexGKA7yHvKxN-ui1i08lqj665EpOUAC2kgzQpD3g0H9GXhgoYr2AKeYZKmyrn15suHCGCqnsoHqn2MGkNUf5ggZxxpFPTL93haVykZa37wIPL2Flos0LaRgFgyrzWb_7dEnoAiOkefN5s9Xoq5te8Q_TtKim5LiCysmvIR3D3mYGg-kaSJug0u0WgbUdsebswp5F5gNklpA"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">New Submisson</p>
+<h4 class="font-headline font-bold text-lg leading-tight mt-1">Linen Oasis Abaya</h4>
+<p class="text-sm text-on-surface-variant mt-1">by Studio Zahra</p>
+</div>
+<div class="text-right">
+<span class="font-headline font-bold text-lg">$540</span>
+</div>
+</div>
+<div class="flex gap-3 pt-4 border-t border-surface-variant/30">
+<button class="flex-1 py-3 px-4 bg-error-container text-on-error-container rounded-full text-xs font-bold tracking-widest uppercase hover:bg-error hover:text-white transition-colors">Reject</button>
+<button class="flex-1 py-3 px-4 bg-primary text-on-primary rounded-full text-xs font-bold tracking-widest uppercase hover:opacity-90 transition-opacity">Approve</button>
+</div>
+</div>
+</div>
+<!-- Approval Card 2 -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 editorial-shadow group hover:-translate-y-1 transition-transform duration-500">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="premium textured hijab in charcoal silk captured in close-up showcasing fine weave and luxurious sheen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQB7T20h1kaeV14uekkH051NviANf84msU0Ni5HTp_bVQVWoDYZtA8oGUvT-yQYawiwD3C3rGq5taBuaCK0nDKf0Lg0maAn66dxVP0fXBwjftJSvAnMSL9KD_trqLimCTO2N1yr6hD914dII-mgZIXp5gOIqXlEdfBsvZSnrvgya26N5G4Sf_nTCc46fT4kDdvaciLWpzBubo4VSLpy8vS-tGN59A-Xqx4OPPwrLxTW_L10jgUGnSuGjWFkS4l6rXL6C0KVqNBuQ"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">New Submisson</p>
+<h4 class="font-headline font-bold text-lg leading-tight mt-1">Noir Silk Hijab</h4>
+<p class="text-sm text-on-surface-variant mt-1">by Atelier Malik</p>
+</div>
+<div class="text-right">
+<span class="font-headline font-bold text-lg">$120</span>
+</div>
+</div>
+<div class="flex gap-3 pt-4 border-t border-surface-variant/30">
+<button class="flex-1 py-3 px-4 bg-error-container text-on-error-container rounded-full text-xs font-bold tracking-widest uppercase hover:bg-error hover:text-white transition-colors">Reject</button>
+<button class="flex-1 py-3 px-4 bg-primary text-on-primary rounded-full text-xs font-bold tracking-widest uppercase hover:opacity-90 transition-opacity">Approve</button>
+</div>
+</div>
+</div>
+<!-- Approval Card 3 -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 editorial-shadow group hover:-translate-y-1 transition-transform duration-500">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="modern tailored thobe in cream wool with intricate geometric embroidery on collar and cuffs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb7BLaoEv8Ipq5PoUv0jFG-qZvSdkghtrPfKgIfb1THYHwyVaEAJUxsxSTOssMmgpc_Ab131stnXr46iENU6vDjoJBWbs6xEJhOMF2THspkdnOv4yTZe0oyDAqQrp36uDAAMksp9JYj-ZmzD5RFDq3k10QLTIQ0CgC-YLRBBm7nb7hHed5tHOalm5v12MMLl6bx6hOSGiWL6X0Obm8Nf1dNukPXVBP_OmxqitRAeOXFVPRkOraGGBeW-8cLoXg1dyrMOG8xTJU9A"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">New Submisson</p>
+<h4 class="font-headline font-bold text-lg leading-tight mt-1">Majestic Wool Thobe</h4>
+<p class="text-sm text-on-surface-variant mt-1">by Heritage Menswear</p>
+</div>
+<div class="text-right">
+<span class="font-headline font-bold text-lg">$890</span>
+</div>
+</div>
+<div class="flex gap-3 pt-4 border-t border-surface-variant/30">
+<button class="flex-1 py-3 px-4 bg-error-container text-on-error-container rounded-full text-xs font-bold tracking-widest uppercase hover:bg-error hover:text-white transition-colors">Reject</button>
+<button class="flex-1 py-3 px-4 bg-primary text-on-primary rounded-full text-xs font-bold tracking-widest uppercase hover:opacity-90 transition-opacity">Approve</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vendor Management Table -->
+<section class="bg-surface-container-low rounded-[2rem] p-10 overflow-hidden editorial-shadow">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-10">
+<div>
+<h3 class="font-headline text-2xl font-bold tracking-tight">Vendor Collective</h3>
+<p class="text-on-surface-variant text-sm mt-1">Management and status of your active designers.</p>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-highest/30 p-2 rounded-full">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/60">search</span>
+<input class="pl-12 pr-6 py-2 bg-transparent border-none focus:ring-0 text-sm font-body w-64" placeholder="Search designers..." type="text"/>
+</div>
+<button class="bg-surface px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">Filter</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-separate border-spacing-y-4">
+<thead class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant font-extrabold">
+<tr>
+<th class="pb-4 pl-6">Atelier Name</th>
+<th class="pb-4">Category</th>
+<th class="pb-4">Performance</th>
+<th class="pb-4">Status</th>
+<th class="pb-4 pr-6 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body text-sm">
+<tr class="bg-surface-container-lowest rounded-2xl group hover:shadow-md transition-shadow">
+<td class="py-5 pl-6 rounded-l-2xl">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-headline font-bold text-primary">SZ</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Studio Zahra</p>
+<p class="text-xs text-on-surface-variant opacity-70">Joined Oct 2023</p>
+</div>
+</div>
+</td>
+<td class="py-5">Modest Luxury</td>
+<td class="py-5">
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">4.9</span>
+<span class="text-on-surface-variant opacity-40">/ 5.0</span>
+</div>
+</td>
+<td class="py-5">
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-[10px] font-extrabold uppercase tracking-widest">Featured</span>
+</td>
+<td class="py-5 pr-6 text-right rounded-r-2xl">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">more_horiz</button>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest rounded-2xl group hover:shadow-md transition-shadow">
+<td class="py-5 pl-6 rounded-l-2xl">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-headline font-bold text-primary">HM</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Heritage Menswear</p>
+<p class="text-xs text-on-surface-variant opacity-70">Joined Jan 2024</p>
+</div>
+</div>
+</td>
+<td class="py-5">Traditional Tailoring</td>
+<td class="py-5">
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">4.7</span>
+<span class="text-on-surface-variant opacity-40">/ 5.0</span>
+</div>
+</td>
+<td class="py-5">
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant rounded-full text-[10px] font-extrabold uppercase tracking-widest">Active</span>
+</td>
+<td class="py-5 pr-6 text-right rounded-r-2xl">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">more_horiz</button>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest rounded-2xl group hover:shadow-md transition-shadow">
+<td class="py-5 pl-6 rounded-l-2xl">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-headline font-bold text-primary">AM</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Atelier Malik</p>
+<p class="text-xs text-on-surface-variant opacity-70">Joined Nov 2023</p>
+</div>
+</div>
+</td>
+<td class="py-5">Accessories</td>
+<td class="py-5">
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">4.2</span>
+<span class="text-on-surface-variant opacity-40">/ 5.0</span>
+</div>
+</td>
+<td class="py-5">
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant rounded-full text-[10px] font-extrabold uppercase tracking-widest">Active</span>
+</td>
+<td class="py-5 pr-6 text-right rounded-r-2xl">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">more_horiz</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+</div>
+<!-- Mobile Navigation Shell -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full glass-panel flex justify-around items-center px-8 pb-8 pt-4 z-50 rounded-t-[32px] editorial-shadow">
+<a class="flex flex-col items-center justify-center text-primary after:content-[''] after:w-1 after:h-1 after:bg-primary after:rounded-full after:mt-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface/40" href="#">
+<span class="material-symbols-outlined">group</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface/40" href="#">
+<span class="material-symbols-outlined">check_circle</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface/40" href="#">
+<span class="material-symbols-outlined">person</span>
+</a>
+</nav>
+<!-- Global Search FAB (Contextual) -->
+<button class="fixed bottom-24 right-8 w-16 h-16 bg-primary text-on-primary rounded-full editorial-shadow flex items-center justify-center group active:scale-95 transition-all duration-300 md:bottom-12">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-90 transition-transform">add</span>
+</button>
+</body></html>

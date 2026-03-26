@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#484828",
+              "surface": "#fbfbe2",
+              "surface-dim": "#dbdcc3",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e4e4cc",
+              "on-secondary-container": "#656464",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1b1d0e",
+              "surface-container": "#efefd7",
+              "secondary-fixed-dim": "#c8c6c6",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "surface-container-low": "#f5f5dc",
+              "primary-fixed": "#ffe088",
+              "primary-container": "#d4af37",
+              "tertiary-container": "#b6b58c",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary-container": "#554300",
+              "on-primary-fixed": "#241a00",
+              "on-error-container": "#93000a",
+              "primary": "#735c00",
+              "tertiary-fixed-dim": "#cac99f",
+              "background": "#fbfbe2",
+              "tertiary-fixed": "#e6e5b9",
+              "outline": "#7f7663",
+              "outline-variant": "#d0c5af",
+              "secondary-container": "#e4e2e1",
+              "on-tertiary-fixed": "#1d1d03",
+              "inverse-surface": "#303221",
+              "error": "#ba1a1a",
+              "surface-tint": "#735c00",
+              "surface-bright": "#fbfbe2",
+              "on-secondary-fixed-variant": "#474747",
+              "secondary-fixed": "#e4e2e1",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#e9c349",
+              "on-background": "#1b1d0e",
+              "surface-container-high": "#eaead1",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f2f2d9",
+              "secondary": "#5f5e5e",
+              "on-surface-variant": "#4d4635",
+              "surface-variant": "#e4e4cc"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Manrope"],
+              "arabic": ["Amiri"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<button class="hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#1b1d0e] dark:text-[#fbfbe2]">menu</span>
+</button>
+<h1 class="font-['Manrope'] tracking-[0.2em] uppercase text-xl font-bold text-[#1b1d0e] dark:text-[#fbfbe2]">THE ETHEREAL ATELIER</h1>
+<button class="hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#1b1d0e] dark:text-[#fbfbe2]">shopping_bag</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-screen-xl mx-auto">
+<!-- Title & Arabic Pairing -->
+<div class="mb-12 text-center md:text-left">
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-primary mb-2 block">Collections</span>
+<div class="flex flex-col md:flex-row md:items-baseline md:gap-6">
+<h2 class="font-headline text-5xl font-light tracking-tight text-on-surface">Browse Categories</h2>
+<span class="font-arabic text-4xl text-outline-variant opacity-60">تصفح الفئات</span>
+</div>
+</div>
+<!-- Luxury Tabs (Category Switcher) -->
+<div class="flex gap-4 mb-16 overflow-x-auto no-scrollbar pb-4 -mx-6 px-6">
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-label text-sm tracking-wider whitespace-nowrap shadow-xl">Abaya</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface font-label text-sm tracking-wider whitespace-nowrap hover:bg-surface-container-high transition-colors">Hijab</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface font-label text-sm tracking-wider whitespace-nowrap hover:bg-surface-container-high transition-colors">Thobe</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface font-label text-sm tracking-wider whitespace-nowrap hover:bg-surface-container-high transition-colors">Dresses</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-highest text-on-surface font-label text-sm tracking-wider whitespace-nowrap hover:bg-surface-container-high transition-colors">Accessories</button>
+</div>
+<!-- Featured High-End Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+<!-- Large Featured Card -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-3xl aspect-[16/10] md:aspect-auto h-[400px]">
+<img alt="Signature Silk Abaya Collection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning model wearing a flowing black premium silk abaya with intricate embroidery, standing in a sunlit architectural courtyard with soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhY7Qh7kNR2PJneO5OkDyemB0N0hE_AwLqduU9-Mna3i4D1BnSDemW9LlLDUD7W_OK77p70KNMPtB6dwbnZfkav0fWBrPpoqhmfeinY_IA4T9xpY7jZulvlviwL3Z0gF_lU7WvaIjRM_tIv3gcbqANSJ4W37cjK20wmugIih4Y0EqIUa6FpWhJzm4AH5HbhwkSVgodEx-DPd4cK_vNsXqVY7z2VAoWFmM-5ph2FXjfwfJ9ljdzf8zQ4zjgug6K7IF0mxch7-YYOA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-surface">
+<p class="font-label text-xs uppercase tracking-widest mb-2">New Season</p>
+<h3 class="font-headline text-3xl font-light mb-4">The Noir Collection</h3>
+<button class="bg-surface/20 backdrop-blur-md px-6 py-2 rounded-full border border-surface/30 text-sm tracking-tight hover:bg-surface hover:text-on-surface transition-all">Explore Lookbook</button>
+</div>
+</div>
+<!-- Vertical Secondary Card -->
+<div class="relative group overflow-hidden rounded-3xl h-[400px]">
+<img alt="Summer Linen Dresses" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant close-up of a minimalist sand-colored linen dress hanging on a wooden rail against a warm textured plaster wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkPT09RwOmBdDIzMKxO8F1gK4n8KcC9MOCgLKhGdJH7iSK-exSc0p8KNkFTS1rP5iJBdoxq19ZhALH6lx8HyWv8xjfcG2zRYnJTKLuf2xhJQA7taWqDxnMpD8Cgru0Dq9Gaxs848FOXIKR7XY-Qkv-rTJ0C0AxkH5ApzdI9eDvonI6HG1De8OqHL72UP920QMkCcUKe3CfskUbqjVprwf8dB1VgiOJiGrbWa7jUA_ZrymLB-xV6t4l2wHoqnmaNKt5SBKLxtAxIA"/>
+<div class="absolute inset-0 bg-on-surface/20 group-hover:bg-on-surface/10 transition-colors"></div>
+<div class="absolute top-8 left-8">
+<span class="bg-primary-container/80 backdrop-blur-sm px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-on-primary-container">Atelier Exclusive</span>
+</div>
+<div class="absolute bottom-8 left-8 text-surface">
+<h3 class="font-headline text-2xl font-light">Desert Linen</h3>
+</div>
+</div>
+</div>
+<!-- Sub-Category Icon Grid (Circular Minimalist) -->
+<section class="mb-20">
+<h4 class="font-headline text-lg tracking-widest uppercase text-on-surface-variant mb-10 text-center md:text-left">Shop by Style</h4>
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-8">
+<div class="flex flex-col items-center gap-4 group cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center transition-all duration-300 group-hover:shadow-[0px_20px_40px_rgba(27,29,14,0.06)] group-hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-4xl text-primary font-light">layers</span>
+</div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface text-center">Layered Silk</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center transition-all duration-300 group-hover:shadow-[0px_20px_40px_rgba(27,29,14,0.06)] group-hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-4xl text-primary font-light">auto_awesome</span>
+</div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface text-center">Embroidered</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center transition-all duration-300 group-hover:shadow-[0px_20px_40px_rgba(27,29,14,0.06)] group-hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-4xl text-primary font-light">spa</span>
+</div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface text-center">Organic Linen</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center transition-all duration-300 group-hover:shadow-[0px_20px_40px_rgba(27,29,14,0.06)] group-hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-4xl text-primary font-light">diamond</span>
+</div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface text-center">Evening Wear</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center transition-all duration-300 group-hover:shadow-[0px_20px_40px_rgba(27,29,14,0.06)] group-hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-4xl text-primary font-light">styler</span>
+</div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface text-center">Contemporary</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center transition-all duration-300 group-hover:shadow-[0px_20px_40px_rgba(27,29,14,0.06)] group-hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-4xl text-primary font-light">brush</span>
+</div>
+<span class="font-label text-xs tracking-widest uppercase text-on-surface text-center">Bespoke</span>
+</div>
+</div>
+</section>
+<!-- Dynamic Tonal Sections (Asymmetric Layout) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="bg-surface-container-low absolute -inset-4 rounded-3xl -z-10 translate-x-4 translate-y-4"></div>
+<img alt="Tailoring Experience" class="w-full rounded-2xl shadow-xl" data-alt="Macro detail of a high-quality neutral-toned fabric being measured with a brass measuring tape, professional studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX_ZkouEjedMz42fCtysQ181o6xYKLyZqoc0QcvC9TJEKOqhj6-1Kr0cEDQvMnHV8R-h8zpR7LqO5jDR1ShdqILZQZgPe1c6I6fVRSb7LEKFheUCG4A2CO9qkntrvoERjqwURQur0QQjqpYKTjJHNgZk1VXf3XERe6QMVVzpEzhCCWFez2UvjhmATmAlFs4tQYVAlnfbe1NjE_nc_7DVggoSH09ZtH8EdbNKqoA2syj5MR0ehIChUCxa2JBRac1IVRMPUbhXs0-A"/>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<h4 class="font-headline text-4xl font-light text-on-surface leading-tight">Virtual Atelier <br/><span class="text-primary italic font-serif">The Perfect Fit</span></h4>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-md">
+                    Experience the future of modest luxury with our AI-driven AR Virtual Fitting. Precision measurements tailored to your silhouette from the comfort of your sanctuary.
+                </p>
+<div class="pt-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-label text-sm uppercase tracking-widest shadow-2xl active:scale-95 transition-all">Start Virtual Fitting</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-safe bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-xl z-50 rounded-t-[24px] shadow-[0px_-10px_40px_rgba(27,29,14,0.04)]">
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors">
+<span class="material-symbols-outlined">home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 scale-90 transition-transform duration-300">
+<span class="material-symbols-outlined">category</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors">
+<span class="material-symbols-outlined">view_in_ar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors">
+<span class="material-symbols-outlined">person</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AR Try-On | THE ETHEREAL ATELIER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "primary": "#735c00",
+              "surface-container": "#efefd7",
+              "surface-dim": "#dbdcc3",
+              "surface-variant": "#e4e4cc",
+              "surface-container-highest": "#e4e4cc",
+              "secondary-fixed": "#e4e2e1",
+              "on-secondary-container": "#656464",
+              "inverse-on-surface": "#f2f2d9",
+              "background": "#fbfbe2",
+              "inverse-primary": "#e9c349",
+              "tertiary-fixed-dim": "#cac99f",
+              "on-surface-variant": "#4d4635",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "tertiary-container": "#b6b58c",
+              "on-tertiary-fixed-variant": "#484828",
+              "on-primary-fixed": "#241a00",
+              "primary-container": "#d4af37",
+              "secondary-container": "#e4e2e1",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "on-secondary-fixed-variant": "#474747",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#1d1d03",
+              "secondary-fixed-dim": "#c8c6c6",
+              "secondary": "#5f5e5e",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "surface-tint": "#735c00",
+              "outline-variant": "#d0c5af",
+              "tertiary-fixed": "#e6e5b9",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-primary-container": "#554300",
+              "outline": "#7f7663",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "surface-container-low": "#f5f5dc",
+              "surface": "#fbfbe2",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fbfbe2",
+              "inverse-surface": "#303221",
+              "primary-fixed": "#ffe088",
+              "on-background": "#1b1d0e",
+              "on-surface": "#1b1d0e"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Manrope"],
+              "arabic": ["Amiri"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .camera-feed {
+        background-size: cover;
+        background-position: center;
+      }
+      .glass-effect {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background overflow-hidden">
+<!-- Top AppBar - Suppressed standard nav to prioritize AR Canvas as per Task instructions -->
+<header class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#735c00] active:scale-95 duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="text-lg font-bold tracking-widest text-[#1b1d0e] dark:text-[#fbfbe2] font-headline uppercase">
+                THE ETHEREAL ATELIER
+            </div>
+<button class="text-[#735c00] active:scale-95 duration-200">
+<span class="material-symbols-outlined">info</span>
+</button>
+</div>
+</header>
+<!-- AR Camera View Layer -->
+<main class="relative h-screen w-full overflow-hidden bg-surface-dim">
+<div class="absolute inset-0 z-0 camera-feed bg-[url('https://images.unsplash.com/photo-1590439471364-192aa70c0b53?q=80&amp;w=2000&amp;auto=format&amp;fit=crop')]" data-alt="Front facing portrait of a serene woman in soft natural lighting, high fashion photography style, intended for AR hijab overlay.">
+<!-- Simulated AR Tracking Indicators -->
+<div class="absolute inset-0 flex items-center justify-center opacity-30">
+<div class="w-64 h-80 border-[1px] border-primary-container rounded-[120px] flex items-center justify-center">
+<div class="w-4 h-4 border-t-2 border-l-2 border-primary-container absolute top-0 left-1/4"></div>
+<div class="w-4 h-4 border-t-2 border-r-2 border-primary-container absolute top-0 right-1/4"></div>
+</div>
+</div>
+</div>
+<!-- AR Interface Overlays -->
+<div class="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end">
+<!-- Selection Panel Container -->
+<div class="pointer-events-auto p-6 space-y-8 bg-gradient-to-t from-background/90 via-background/40 to-transparent pb-32">
+<!-- Fabric & Color Switcher -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<div class="space-y-1">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary block">Select Essence</span>
+<h2 class="font-headline text-xl font-bold">Silk Chiffon</h2>
+</div>
+<span class="font-arabic text-xl text-primary-container">حرير شيفون</span>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+<!-- Color Swatches -->
+<button class="w-12 h-12 rounded-full border-2 border-primary ring-offset-2 ring-1 ring-primary-container shrink-0 bg-[#e5d3b3] transition-transform active:scale-90" title="Champagne Gold"></button>
+<button class="w-12 h-12 rounded-full shrink-0 bg-[#4a412a] transition-transform active:scale-90" title="Deep Olive"></button>
+<button class="w-12 h-12 rounded-full shrink-0 bg-[#d8c8bd] transition-transform active:scale-90" title="Dusty Rose"></button>
+<button class="w-12 h-12 rounded-full shrink-0 bg-[#2c2c2c] transition-transform active:scale-90" title="Midnight Onyx"></button>
+<button class="w-12 h-12 rounded-full shrink-0 bg-[#f5f5f5] border border-outline-variant transition-transform active:scale-90" title="Pure Pearl"></button>
+<button class="w-12 h-12 rounded-full shrink-0 bg-[#8b7355] transition-transform active:scale-90" title="Roasted Sienna"></button>
+</div>
+</div>
+<!-- Hijab Style Carousel -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<div class="h-[1px] flex-1 bg-primary-container/30"></div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary font-bold">Draping Styles</span>
+<div class="h-[1px] flex-1 bg-primary-container/30"></div>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar py-2">
+<!-- Style Card 1: Active -->
+<div class="min-w-[120px] aspect-[3/4] rounded-2xl bg-surface-container-lowest shadow-lg border-2 border-primary-container p-2 flex flex-col group relative overflow-hidden">
+<div class="flex-1 bg-surface-container-low rounded-xl mb-2 overflow-hidden">
+<img class="w-full h-full object-cover opacity-80" data-alt="Minimalist sketch of a classic wrap hijab style against a neutral beige background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo-wBFcUihr7s1a4P7eGch-dQyj43CLekLBp_WjfLBiJMBbXN0_rTvNitVh3SiUUj0OQe9tHEKCeAyVtNXMj_xUHueTl_TaoIi8CvFAdbznG4tKAecgUZ5vubrJjXe9Lw4VpVeNlrRyF8Ypm7z3dUUYMjZdc8bWH3M_-7kfikj-yg5AYebzzbTvtwLIW2vbi00Z1cKB6KY7wQNKNXBzAMidIYEB6bgiI_WohEKk309Fn7dyBZrU3MAG3QKlDiiXe6eZuKtxfFV5Q"/>
+</div>
+<span class="text-[10px] font-headline font-bold uppercase text-center tracking-tight">The Classic</span>
+</div>
+<!-- Style Card 2 -->
+<div class="min-w-[120px] aspect-[3/4] rounded-2xl bg-surface-container/60 glass-effect p-2 flex flex-col group transition-all active:scale-95">
+<div class="flex-1 bg-surface-container-low/40 rounded-xl mb-2 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="Clean minimal line art showing an effortless draped hijab style with soft folds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIhCL9rRLNtvFpbFgLcMGgJ2-968PUAOQSrslXvQOvyGh4MqyySKrYUPXFKwn_q-gZvRO5TOtN2mPj3rzmp9QoeZHsicMPPvCw3nx_enDKGW_pKWIcfN1NnemOPoxTthgsoQ6A7D6xXbn5kdM9J8dHMKVWcWcGNewNp4hXehla7cL0AwqmLcgDdZiqI1TM75k8MMPKtDb7J0o8WEFevUekqea_U1U9Dkuxwo_HKYcai-hYHvGowEfdC7kmtaYEEgEztSvMKLMR3g"/>
+</div>
+<span class="text-[10px] font-headline font-medium uppercase text-center tracking-tight text-on-surface/60">Parisian Fold</span>
+</div>
+<!-- Style Card 3 -->
+<div class="min-w-[120px] aspect-[3/4] rounded-2xl bg-surface-container/60 glass-effect p-2 flex flex-col group transition-all active:scale-95">
+<div class="flex-1 bg-surface-container-low/40 rounded-xl mb-2 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="A sophisticated turban-style hijab wrap illustration with elegant layering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoZQi7haS2wY2-tDl_Afloaa6tmlxEJvCjoBl817Xk9qNjiZYjSBRo84Jf3qKbOzCbJRiJlzSsA6iMu1EBwpfX9Z1PGQHbt0zSbO0DwRO64okXIY_fkm9bd0cFCMUhA1XAN5Drfe6JUA7O2thA8sirkQvNxkW54NYXieOKKBvQ4-nWIgvXIoOequyT-ImkT8B38vYBwlQp52N5i1fZbJjl2I9cQKFaFVi21cck9PW8Ga-3qFoSmKS1TvfKAdt2xVTfR2sAJDvcEw"/>
+</div>
+<span class="text-[10px] font-headline font-medium uppercase text-center tracking-tight text-on-surface/60">The Artisan</span>
+</div>
+<!-- Style Card 4 -->
+<div class="min-w-[120px] aspect-[3/4] rounded-2xl bg-surface-container/60 glass-effect p-2 flex flex-col group transition-all active:scale-95">
+<div class="flex-1 bg-surface-container-low/40 rounded-xl mb-2 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="A modern loose wrap hijab illustration focusing on graceful movement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC23uIHjjEi6k9QqSKtW8hczT-UPIeqf_Jbuz4ps5c0SkEbjSrcIkQ0Pe8hmvju_OvSIye1XqeYhAbHyjpWtGsta4reCbKvjb7oMgbpgjpZ7tN0KOICX5tUtY7NUrCAlXmNRQYkTZN0wxYK2ypHzpjtDBzXLV-_OeAssXmGM5VMdBvr6sw5-iSklZ1ienko8w5JB48EVvpMkJYFfuRXeYO9EuskEs2tHuyb1U2qDC3CHRjOB7aFrZ1WdBOEgu_xrIDG4iWNz9k8NQ"/>
+</div>
+<span class="text-[10px] font-headline font-medium uppercase text-center tracking-tight text-on-surface/60">Modern Nomad</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Capture Controls -->
+<div class="absolute bottom-8 left-0 w-full z-20 flex justify-center items-center gap-8 px-8">
+<button class="w-12 h-12 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-background border border-white/30 transition-all active:scale-90">
+<span class="material-symbols-outlined">refresh</span>
+</button>
+<!-- Main Capture Button -->
+<button class="relative flex items-center justify-center group active:scale-90 transition-transform">
+<div class="absolute inset-0 bg-primary-container rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<div class="w-20 h-20 rounded-full bg-gradient-to-tr from-primary to-primary-container p-[3px]">
+<div class="w-full h-full rounded-full bg-background flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-primary to-primary-container"></div>
+</div>
+</div>
+</button>
+<button class="w-12 h-12 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-on-background border border-white/30 transition-all active:scale-90">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<!-- Float Info Badge -->
+<div class="absolute top-24 right-6 z-20 pointer-events-none">
+<div class="bg-primary/90 text-on-primary px-3 py-1 rounded-full flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+<span class="font-label text-[10px] font-bold tracking-widest uppercase">AR Ready</span>
+</div>
+</div>
+</main>
+<!-- Side Navigation Overlay (Hidden by Default) -->
+<div class="fixed inset-0 z-[100] bg-on-background/20 backdrop-blur-sm pointer-events-none opacity-0 transition-opacity duration-500" id="drawer">
+<div class="h-full w-80 bg-[#fbfbe2] dark:bg-stone-950 rounded-r-3xl shadow-2xl flex flex-col p-8 gap-4 -translate-x-full transition-transform duration-500 pointer-events-auto">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border-2 border-primary-container">
+<img alt="Sultana Al-Saud" class="w-full h-full object-cover" data-alt="Close up portrait of a elegant woman wearing high end accessories with soft gold lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWbEpNPigN3SQMKt_y9lAUR6Hc06Pa8uKUoYJUVM4wYZWMZXwaWb5mX81v2bAwKD6pDKSfnBD3SMoR3oqSlGOC5K5odvMpvOU0uUakOMmoW0WePKZZJVOQbFdLD3u0Q0J9qfrukmkAubX8RuT4wESsxqu2hRbI4SOrWM5qE-9H-AFhRKL9Nq8i7XCD0CO3yLlfNSSy0IIylPEW863-7_qJFxOHu7uLrVnsWf-huzpeo4KT-9teVmozk0qW--krN1hM0KS4iOFw0g"/>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-background">Sultana Al-Saud</h3>
+<p class="font-body text-xs text-primary">Gold Member</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<div class="flex items-center gap-4 px-4 py-3 text-[#1b1d0e] hover:bg-[#e4e4cc] transition-all rounded-xl cursor-pointer">
+<span class="material-symbols-outlined text-primary">flare</span>
+<span class="font-manrope font-semibold text-base">New Arrivals</span>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 bg-[#f5f5dc] text-[#735c00] rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">styler</span>
+<span class="font-manrope font-semibold text-base">Virtual Try-On</span>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 text-[#1b1d0e] hover:bg-[#e4e4cc] transition-all rounded-xl cursor-pointer">
+<span class="material-symbols-outlined text-primary">checkroom</span>
+<span class="font-manrope font-semibold text-base">Hijabs</span>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 text-[#1b1d0e] hover:bg-[#e4e4cc] transition-all rounded-xl cursor-pointer">
+<span class="material-symbols-outlined text-primary">straighten</span>
+<span class="font-manrope font-semibold text-base">Custom Tailoring</span>
+</div>
+</nav>
+<div class="mt-auto pt-8 border-t border-primary-container/20">
+<div class="flex items-center gap-4 px-4 py-3 text-[#1b1d0e] hover:bg-[#e4e4cc] transition-all rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-manrope font-semibold text-base">AR Settings</span>
+</div>
+</div>
+</div>
+</div>
+</body></html>

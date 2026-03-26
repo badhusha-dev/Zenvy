@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Noor Collective | Custom Tailoring</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "primary": "#735c00",
+              "surface-container": "#efefd7",
+              "surface-dim": "#dbdcc3",
+              "surface-variant": "#e4e4cc",
+              "surface-container-highest": "#e4e4cc",
+              "secondary-fixed": "#e4e2e1",
+              "on-secondary-container": "#656464",
+              "inverse-on-surface": "#f2f2d9",
+              "background": "#fbfbe2",
+              "inverse-primary": "#e9c349",
+              "tertiary-fixed-dim": "#cac99f",
+              "on-surface-variant": "#4d4635",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "tertiary-container": "#b6b58c",
+              "on-tertiary-fixed-variant": "#484828",
+              "on-primary-fixed": "#241a00",
+              "primary-container": "#d4af37",
+              "secondary-container": "#e4e2e1",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "on-secondary-fixed-variant": "#474747",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#1d1d03",
+              "secondary-fixed-dim": "#c8c6c6",
+              "secondary": "#5f5e5e",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "surface-tint": "#735c00",
+              "outline-variant": "#d0c5af",
+              "tertiary-fixed": "#e6e5b9",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-primary-container": "#554300",
+              "outline": "#7f7663",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "surface-container-low": "#f5f5dc",
+              "surface": "#fbfbe2",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fbfbe2",
+              "inverse-surface": "#303221",
+              "primary-fixed": "#ffe088",
+              "on-background": "#1b1d0e",
+              "on-surface": "#1b1d0e"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Manrope"],
+              "arabic": ["Amiri"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fbfbe2;
+            color: #1b1d0e;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(27, 29, 14, 0.06);
+        }
+        .metallic-silk {
+            background: linear-gradient(135deg, #735c00 0%, #d4af37 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#1b1d0e]/60 dark:text-[#fbfbe2]/60 hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="font-manrope text-lg font-bold tracking-widest text-[#1b1d0e] dark:text-[#fbfbe2] uppercase">THE ETHEREAL ATELIER</div>
+<button class="text-[#1b1d0e]/60 dark:text-[#fbfbe2]/60 hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 md:px-24 max-w-7xl mx-auto">
+<!-- Header & Progress Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label text-[11px] tracking-[0.2em] uppercase text-primary font-bold mb-2 block">Couture Experience</span>
+<h1 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-2">Custom Tailoring</h1>
+<p class="font-arabic text-2xl text-on-surface-variant/70 leading-relaxed">خياطة مخصصة</p>
+</div>
+<!-- Progress Stepper -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-3xl w-full md:w-auto overflow-x-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs">1</div>
+<span class="font-label text-xs font-bold uppercase tracking-wider whitespace-nowrap">Design</span>
+</div>
+<div class="h-px w-8 bg-outline-variant/30"></div>
+<div class="flex items-center gap-3 opacity-100">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs">2</div>
+<span class="font-label text-xs font-bold uppercase tracking-wider whitespace-nowrap">Modify</span>
+</div>
+<div class="h-px w-8 bg-outline-variant/30"></div>
+<div class="flex items-center gap-3 opacity-40">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-xs">3</div>
+<span class="font-label text-xs font-bold uppercase tracking-wider whitespace-nowrap">Measure</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Customization Interface -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Live Preview (The Studio) -->
+<div class="lg:col-span-7 sticky top-32">
+<div class="relative bg-surface-container-low rounded-3xl overflow-hidden aspect-[4/5] editorial-shadow group">
+<img alt="Abaya Preview" class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="Stunning minimalist abaya in soft beige silk flowing against a neutral architectural background with soft natural lighting and elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFoLGSg_qfrEOmuLihSek90URFJs_UTk8I_V16Yd_8voeMqP6XL8OP6x7UQeWiFsb41OlqnsoKkeCUmOdZbecAzDpgHA9vy7FTGLu948jeoDcNPE1ggcWcShYffm6rEiaQxUO75iVPlVik-azQ5LoGyX79trryFhhVzrXsJ3fMZpeMdIdEJY_JNvC2PRdaTyFvdP86F65lOl8EhrHbua1YrGC6fDdpyzSQ_L3dwnR290OfEP94vPv93VCoRbGGjrqug7cq2E536g"/>
+<!-- Interactive Hotspots (Simulation) -->
+<div class="absolute top-1/4 right-1/4 group/hotspot">
+<div class="w-4 h-4 rounded-full bg-white/40 backdrop-blur-sm animate-pulse flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-white"></div>
+</div>
+<div class="absolute left-6 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full whitespace-nowrap opacity-0 group-hover/hotspot:opacity-100 transition-opacity">
+<span class="text-[10px] font-bold uppercase tracking-tighter">Neckline: V-Cut</span>
+</div>
+</div>
+<div class="absolute bottom-1/3 left-1/3 group/hotspot">
+<div class="w-4 h-4 rounded-full bg-white/40 backdrop-blur-sm animate-pulse flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-white"></div>
+</div>
+<div class="absolute right-6 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full whitespace-nowrap opacity-0 group-hover/hotspot:opacity-100 transition-opacity">
+<span class="text-[10px] font-bold uppercase tracking-tighter">Sleeves: Tapered</span>
+</div>
+</div>
+<!-- Floating Zoom/Rotate Controls -->
+<div class="absolute bottom-6 right-6 flex flex-col gap-2">
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">360</span>
+</button>
+</div>
+</div>
+<div class="mt-6 flex gap-4 overflow-x-auto pb-4">
+<div class="min-w-[80px] h-20 rounded-xl bg-surface-container-highest flex-shrink-0 border-2 border-primary overflow-hidden">
+<img alt="Fabric 1" class="w-full h-full object-cover" data-alt="Close up of premium beige linen fabric texture with soft weave and natural organic look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApjNvOAj5YcoxQjnr3z5mvWaTYLGip7ivGzlv4FDjwHCMY-5aYDxEa3IIY51dqlP2R6KwDkswS9l3kC2G0yYCVQ-O2PH68HTiibLDeuhHoxHsMGLjr0TcqXoMu_ssqI4KCC6E51TfmgowVuLRO81DFFvPYvsBpEeF9--Xk_XPxLNQujPBvB1UohQUgsn6a8s_mNqYYk2BI_ad8FeXuoAotLP1mwb8RnTIhGQIMD2VRQIq2f_3GjdVOhxzYYG0_5v8LzivgchC1yw"/>
+</div>
+<div class="min-w-[80px] h-20 rounded-xl bg-surface-container-low flex-shrink-0 overflow-hidden opacity-60 hover:opacity-100 cursor-pointer transition-opacity">
+<img alt="Fabric 2" class="w-full h-full object-cover" data-alt="Macro shot of dark charcoal wool fabric showing rich texture and fine tailoring quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfWyzV2-HEkj5vUk6Os-SklvL66L90EbG2Jha1GFqsS2qEOIxTMiLOjHcznIn6Jqu2U8jZLxlTfYXOw54_FZQALLLFeK6us1oZNlFxF8WMCmH_pG5C2TSJ8YUKrLF_7xlrcVQ7odIZhIaYGSawbDzyWz0OKNnDNM9aJtQNxFvpVhbsZ0pihmhkDujI09mvlNKYcJ5qtoyPIW-23GCu_VXKl-1aUFyswi0hcwNM2OvLeB807ut8h88-brkO9FqjKxd31KapLEi_ZQ"/>
+</div>
+<div class="min-w-[80px] h-20 rounded-xl bg-surface-container-low flex-shrink-0 overflow-hidden opacity-60 hover:opacity-100 cursor-pointer transition-opacity">
+<img alt="Fabric 3" class="w-full h-full object-cover" data-alt="Detailed view of light champagne satin fabric with shimmering reflections and fluid drape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsYZo0V3AAApaJpQlIvGDoJuxRqNGXsSEsjdeWiuFeJr7asNtnlyCAsUhd65SLcqosReIPWQ9caH6wP6S07gzf913_IlI5QzOyRVCr6ODWpR0eOdUIxRaZiEXV4DZVP3f2zEsClyw8GUmfYrB34EW7GQjwyx5ikOncosQyKJ2NgxY1B4GuTt-OyJXlMD0a64AhdMw4AbrJLSL3xjXJiP1V6sTfw6KOBWb_0XU3vwXLzblB8aY5QZeO89xGSkLwroAXAwqju1erXA"/>
+</div>
+</div>
+</div>
+<!-- Right: Configuration Panel -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Section: Design Base -->
+<div class="bg-surface-container-low p-8 rounded-3xl">
+<h3 class="font-headline text-lg font-bold mb-6 flex justify-between items-center">
+                        Selection Details
+                        <span class="font-label text-[10px] text-primary bg-primary/10 px-2 py-1 rounded-full">Base: Sahara Flow</span>
+</h3>
+<div class="space-y-8">
+<!-- Modification: Sleeves -->
+<div>
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4 block">Sleeve Style</label>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-primary text-on-primary py-4 px-4 rounded-2xl text-left flex flex-col gap-1 transition-all">
+<span class="font-bold text-sm">Tapered Fit</span>
+<span class="text-[10px] opacity-80">Modern &amp; Minimal</span>
+</button>
+<button class="bg-surface-container-highest text-on-surface py-4 px-4 rounded-2xl text-left flex flex-col gap-1 hover:bg-surface-dim transition-all">
+<span class="font-bold text-sm">Wide Bell</span>
+<span class="text-[10px] opacity-60">Classic Couture</span>
+</button>
+<button class="bg-surface-container-highest text-on-surface py-4 px-4 rounded-2xl text-left flex flex-col gap-1 hover:bg-surface-dim transition-all">
+<span class="font-bold text-sm">Elasticated</span>
+<span class="text-[10px] opacity-60">Functional Utility</span>
+</button>
+<button class="bg-surface-container-highest text-on-surface py-4 px-4 rounded-2xl text-left flex flex-col gap-1 hover:bg-surface-dim transition-all">
+<span class="font-bold text-sm">Slit Cuffs</span>
+<span class="text-[10px] opacity-60">Subtle Sophistication</span>
+</button>
+</div>
+</div>
+<!-- Modification: Neckline -->
+<div>
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4 block">Neckline Architecture</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-6 py-2 rounded-full border border-primary text-primary font-bold text-xs bg-primary-container/20">V-Neck</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant/30 text-on-surface font-semibold text-xs hover:bg-surface-variant transition-colors">Mandarin Collar</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant/30 text-on-surface font-semibold text-xs hover:bg-surface-variant transition-colors">Boat Neck</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant/30 text-on-surface font-semibold text-xs hover:bg-surface-variant transition-colors">High Collar</button>
+</div>
+</div>
+<!-- Modification: Length -->
+<div>
+<div class="flex justify-between items-center mb-4">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant block">Total Length</label>
+<span class="font-headline font-bold text-primary">56" <span class="text-[10px] text-on-surface-variant/60">Standard</span></span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-outline-variant/20 rounded-full appearance-none cursor-pointer" type="range"/>
+<div class="flex justify-between mt-2 text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-tighter">
+<span>Petite (50")</span>
+<span>Tall (62")</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Measurement Guide Snippet -->
+<div class="bg-surface-container-highest p-6 rounded-3xl flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Need help measuring?</h4>
+<p class="text-xs text-on-surface-variant">View our guided video tutorial for the perfect fit.</p>
+</div>
+<button class="ml-auto p-2 text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-4">
+<button class="metallic-silk text-on-primary py-5 rounded-full font-bold text-sm tracking-widest uppercase shadow-lg shadow-primary/20 active:scale-95 transition-transform">
+                        Proceed to Measurements
+                    </button>
+<button class="text-on-surface-variant font-bold text-xs tracking-widest uppercase py-2 hover:opacity-60 transition-opacity">
+                        Save Design Draft
+                    </button>
+</div>
+</div>
+</div>
+<!-- Detailed Features Bento (Optional context) -->
+<section class="mt-24 mb-16">
+<h2 class="font-headline text-2xl font-bold mb-8">Craftsmanship Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">flare</span>
+<h4 class="font-bold text-lg">Premium Silk-Thread</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">We exclusively use dual-core silk threads for seams that are as durable as they are beautiful.</p>
+</div>
+<div class="bg-white p-8 rounded-3xl flex flex-col gap-4 editorial-shadow">
+<span class="material-symbols-outlined text-primary text-3xl">checkroom</span>
+<h4 class="font-bold text-lg">Inner Lining Options</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Choose between breathable cotton voile or luxurious crepe de chine for ultimate comfort.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">diamond</span>
+<h4 class="font-bold text-lg">Bespoke Embellishments</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Optional hand-stitched Swarovski crystals or geometric embroidery accents available.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 z-50 rounded-t-[24px] shadow-[0px_-10px_30px_rgba(27,29,14,0.04)]">
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">home</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">category</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Collections</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">straighten</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Tailoring</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">person</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Atelier</span>
+</button>
+</nav>
+</body></html>

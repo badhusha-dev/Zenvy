@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Noor Collective | The Ethereal Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "error": "#ba1a1a",
+                "primary": "#735c00",
+                "surface-container": "#efefd7",
+                "surface-dim": "#dbdcc3",
+                "surface-variant": "#e4e4cc",
+                "surface-container-highest": "#e4e4cc",
+                "secondary-fixed": "#e4e2e1",
+                "on-secondary-container": "#656464",
+                "inverse-on-surface": "#f2f2d9",
+                "background": "#fbfbe2",
+                "inverse-primary": "#e9c349",
+                "tertiary-fixed-dim": "#cac99f",
+                "on-surface-variant": "#4d4635",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#eaead1",
+                "tertiary-container": "#b6b58c",
+                "on-tertiary-fixed-variant": "#484828",
+                "on-primary-fixed": "#241a00",
+                "primary-container": "#d4af37",
+                "secondary-container": "#e4e2e1",
+                "error-container": "#ffdad6",
+                "tertiary": "#60603e",
+                "on-secondary-fixed-variant": "#474747",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed": "#1d1d03",
+                "secondary-fixed-dim": "#c8c6c6",
+                "secondary": "#5f5e5e",
+                "on-secondary-fixed": "#1b1c1c",
+                "on-primary": "#ffffff",
+                "surface-tint": "#735c00",
+                "outline-variant": "#d0c5af",
+                "tertiary-fixed": "#e6e5b9",
+                "on-tertiary-container": "#474727",
+                "primary-fixed-dim": "#e9c349",
+                "on-primary-container": "#554300",
+                "outline": "#7f7663",
+                "on-error": "#ffffff",
+                "on-primary-fixed-variant": "#574500",
+                "surface-container-low": "#f5f5dc",
+                "surface": "#fbfbe2",
+                "on-error-container": "#93000a",
+                "surface-bright": "#fbfbe2",
+                "inverse-surface": "#303221",
+                "primary-fixed": "#ffe088",
+                "on-background": "#1b1d0e",
+                "on-surface": "#1b1d0e"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Be Vietnam Pro"],
+                "label": ["Manrope"],
+                "arabic": ["Amiri"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#1b1d0e]/60 dark:text-[#fbfbe2]/60 hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-lg font-bold tracking-widest text-[#1b1d0e] dark:text-[#fbfbe2] font-headline uppercase">THE ETHEREAL ATELIER</h1>
+<button class="text-[#1b1d0e]/60 dark:text-[#fbfbe2]/60 hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+<!-- Breadcrumbs -->
+<nav class="mb-12 flex items-center gap-2 text-on-surface-variant font-label text-[11px] tracking-widest uppercase">
+<a class="hover:text-primary transition-colors" href="#">Collections</a>
+<span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Abayas</a>
+<span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary font-bold">The Sahara Silk Wrap</span>
+</nav>
+<!-- Product Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+<!-- Gallery Section (Asymmetric Lookbook) -->
+<div class="lg:col-span-7 grid grid-cols-12 gap-4">
+<div class="col-span-12 relative aspect-[4/5] rounded-3xl overflow-hidden bg-surface-container-low group">
+<img alt="The Sahara Silk Wrap" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="high-end editorial shot of a woman in a flowing silk abaya in a minimalist sand-colored studio with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlnXZOdY-gAg4FaDpu1VhesEi26zyqNwqxkmQcRCIeo1Kbz7kknU_WT4hJnNLL6EEpl-R3rIfY3lerKxRdPUrR7MQF9NkJYGpXwp4OD9JpuGjyQOO0sOcr2sfzlB-S1H5B-hD0ttRRkeFSm6P-clbowXNeTOLNOBHrokNDzgcdENc9r6WF1t9fbYp0PYCWADHlHBjBDs1OtvEM3rgNEEX6J8Ejp-4Se-o9zV1XHNIIwMOoTmpBQBh9IPIdcedb0ePcpD6zqlrHuQ"/>
+<div class="absolute bottom-6 right-6 flex flex-col gap-3">
+<button class="bg-surface/80 backdrop-blur-md p-3 rounded-full shadow-lg text-primary hover:bg-surface transition-all active:scale-90">
+<span class="material-symbols-outlined" data-icon="zoom_in">zoom_in</span>
+</button>
+</div>
+</div>
+<div class="col-span-6 aspect-square rounded-2xl overflow-hidden bg-surface-container-low mt-4">
+<img alt="Fabric detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="extreme close-up of premium sand-colored raw silk fabric showing delicate woven texture and soft sheen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXsRj6fRloZ84iJW4RGpvvTpiFAE1YkTipeWiFmLAAsfEWMTN5S9VkSYGPh_erN8QXdFQkGp2lu_M1CpYE2TP_d4zJx9sFMgw3JknHYkZUHjbpBH6g9V12Ja4Azcx2lk89Q2vblQjSfXqqBQTqX3CCcpwmSIqJxA3s4ruqnljR6MPwa-sOqQHA4Z4CLyK5HYKiVoKxwWxjjkpW9K1PbEbSRwgre-xWyELoLmX1UKHqX3GFInKJtiXHeU4lYTogUzcTWlCqO82pQ"/>
+</div>
+<div class="col-span-6 aspect-square rounded-2xl overflow-hidden bg-surface-container-low mt-12">
+<img alt="Sleeve detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="artistic close-up of a wide abaya sleeve with intricate gold embroidery under soft afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGY2TrXZp_Gqti9JpKaqKFOhF5iY4p5F4goma900wWpByqHxU0fKsj_FpVSMbCZ42Wvvr4uUN7tUzYcHoWLMZFcUWfoqU_8vuZ0-T5m5dgyc2g7g4WZ8JTK4tKaL_k-4Z6kMyBuGF_YFiIyZUkQbJEvDEffuTwlUt1dWwvScnYkqOJDFt30CrhQni4BaWKwbjftdmxx_OiwjbErAdDYFBVkB1vNrKYBffTOixIBLpFmKjKD7MaIQHFrfK5fI6xrO0FJ3zpbDVHcw"/>
+</div>
+</div>
+<!-- Content Section -->
+<div class="lg:col-span-5 flex flex-col gap-10 lg:sticky lg:top-32">
+<div>
+<div class="flex justify-between items-start mb-4">
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-primary font-label text-[10px] tracking-widest uppercase font-bold">New Arrival</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-sm font-bold">4.9</span>
+<span class="text-on-surface-variant text-[11px] ml-1">(42 Reviews)</span>
+</div>
+</div>
+<h1 class="text-4xl md:text-5xl font-headline font-bold text-on-background leading-tight mb-2">The Sahara Silk Wrap</h1>
+<p class="font-arabic text-3xl text-primary/80 mb-6">لفافة الحرير الصحراوية</p>
+<div class="text-2xl font-body font-light text-on-background tracking-tight">AED 2,450.00</div>
+</div>
+<div class="space-y-8">
+<!-- Color Selection -->
+<div>
+<label class="block font-label text-[11px] uppercase tracking-widest text-on-surface-variant font-bold mb-4">Select Palette</label>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-[#E5DACE] border-2 border-primary ring-2 ring-offset-2 ring-transparent transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-[#2C2C2B] hover:ring-2 hover:ring-offset-2 hover:ring-primary-container transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-[#7D6B5D] hover:ring-2 hover:ring-offset-2 hover:ring-primary-container transition-all"></button>
+</div>
+</div>
+<!-- Size Selection -->
+<div>
+<div class="flex justify-between items-end mb-4">
+<label class="block font-label text-[11px] uppercase tracking-widest text-on-surface-variant font-bold">Size Guide</label>
+<button class="text-primary font-label text-[10px] uppercase font-bold tracking-widest underline decoration-primary/30 underline-offset-4">Size Chart</button>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-3 text-center rounded-xl bg-surface-container-high text-on-surface font-body text-sm hover:bg-surface-container-highest transition-colors active:scale-95">52</button>
+<button class="py-3 text-center rounded-xl bg-primary text-on-primary font-body text-sm active:scale-95">54</button>
+<button class="py-3 text-center rounded-xl bg-surface-container-high text-on-surface font-body text-sm hover:bg-surface-container-highest transition-colors active:scale-95">56</button>
+<button class="py-3 text-center rounded-xl bg-surface-container-high text-on-surface font-body text-sm opacity-40 cursor-not-allowed">58</button>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-col gap-4">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container py-5 rounded-full text-on-primary font-label text-sm font-bold uppercase tracking-widest shadow-lg shadow-primary/10 active:scale-95 transition-all">
+                            Add to Atelier Bag
+                        </button>
+<button class="w-full bg-surface-container-highest py-5 rounded-full text-on-surface font-label text-sm font-bold uppercase tracking-widest active:scale-95 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="straighten">straighten</span>
+                            Custom Tailoring Request
+                        </button>
+</div>
+</div>
+<!-- Product Attributes (Bento Style) -->
+<div class="grid grid-cols-2 gap-4 pt-8">
+<div class="p-6 bg-surface-container-low rounded-3xl space-y-2">
+<span class="material-symbols-outlined text-primary" data-icon="eco">eco</span>
+<h4 class="font-label text-[10px] uppercase font-bold tracking-widest">Fabric</h4>
+<p class="text-sm font-body text-on-surface-variant">100% Raw Mulberry Silk</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-3xl space-y-2">
+<span class="material-symbols-outlined text-primary" data-icon="diamond">diamond</span>
+<h4 class="font-label text-[10px] uppercase font-bold tracking-widest">Designer</h4>
+<p class="text-sm font-body text-on-surface-variant">Laila Al-Maktoum</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-3xl col-span-2 flex items-center justify-between">
+<div class="space-y-1">
+<h4 class="font-label text-[10px] uppercase font-bold tracking-widest">Complimentary Services</h4>
+<p class="text-sm font-body text-on-surface-variant">Signature gift wrapping &amp; Express local delivery</p>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="card_giftcard">card_giftcard</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Break -->
+<div class="my-24 h-px bg-outline-variant/20"></div>
+<!-- Reviews Section -->
+<section class="mb-24">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16">
+<div class="max-w-xl">
+<h2 class="text-4xl font-headline font-bold mb-4">Client Reflections</h2>
+<p class="text-on-surface-variant font-body">Our community shares their experiences with the Sahara Silk collection. Every piece is a journey.</p>
+</div>
+<button class="bg-surface-container-highest px-8 py-4 rounded-full font-label text-xs font-bold uppercase tracking-widest hover:bg-surface-dim transition-colors">
+                    Write a Review
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="p-8 bg-surface-container-lowest rounded-3xl space-y-6 shadow-[0px_20px_40px_rgba(27,29,14,0.03)] border border-outline-variant/10">
+<div class="flex justify-between items-center">
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant/60 uppercase">2 Weeks Ago</span>
+</div>
+<p class="font-body text-on-surface leading-relaxed">"The drape of the silk is unlike anything I've owned. It captures the light beautifully during sunset prayers. A true masterpiece."</p>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/10">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center font-bold text-[10px]">MA</div>
+<div>
+<p class="text-xs font-bold font-label">Mariam A.</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Verified Purchase</p>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="p-8 bg-surface-container-lowest rounded-3xl space-y-6 shadow-[0px_20px_40px_rgba(27,29,14,0.03)] border border-outline-variant/10">
+<div class="flex justify-between items-center">
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant/60 uppercase">1 Month Ago</span>
+</div>
+<p class="font-body text-on-surface leading-relaxed">"The custom tailoring service was impeccable. They reached out to confirm my specific sleeve length requirements. Perfectly suited."</p>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/10">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center font-bold text-[10px]">SK</div>
+<div>
+<p class="text-xs font-bold font-label">Sarah K.</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Gold Member</p>
+</div>
+</div>
+</div>
+<!-- Review Card 3 (Image Focused) -->
+<div class="p-8 bg-surface-container-lowest rounded-3xl space-y-6 shadow-[0px_20px_40px_rgba(27,29,14,0.03)] border border-outline-variant/10">
+<div class="flex justify-between items-center">
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant/60 uppercase">3 Days Ago</span>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden mb-2">
+<img alt="Customer photo" class="w-full h-full object-cover" data-alt="unboxing of a luxury fashion item showing premium tissue paper and a gold-stamped invitation card" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGchzAE8Qwx4Jz94NAfG0UROb0tmIYVNCHAhcy3CPdi7Wy4lX-Dq9P1HSKQmWz3NFkL6itChF443ANkZiVfWM4yoVWlW0bhD7gFM6LFK5RNEQ0iPKOvYeKEIbO9585KOX_IUkCf4hEMLSzHUqIPWLm7AB3_au1iiVL1dXedyXJwFqVcjJp3_Rufh_TSQvlhGDfB4Mjvta3sdd4seJ8uxOsbhCPYB826hyz7nuL9qdwv1BL926pXL_OPHn_q9utJ1Ai8ootuyVfDA"/>
+</div>
+<p class="font-body text-on-surface leading-relaxed">"Experience was 10/10. Packaging is so luxurious it felt like receiving a royal gift."</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md rounded-t-[24px] shadow-[0px_-10px_30px_rgba(27,29,14,0.04)] z-50">
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Shop</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="local_mall">local_mall</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Cart</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Profile</span>
+</button>
+</nav>
+</body></html>

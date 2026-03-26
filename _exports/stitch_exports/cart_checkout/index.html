@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "primary": "#735c00",
+              "surface-container": "#efefd7",
+              "surface-dim": "#dbdcc3",
+              "surface-variant": "#e4e4cc",
+              "surface-container-highest": "#e4e4cc",
+              "secondary-fixed": "#e4e2e1",
+              "on-secondary-container": "#656464",
+              "inverse-on-surface": "#f2f2d9",
+              "background": "#fbfbe2",
+              "inverse-primary": "#e9c349",
+              "tertiary-fixed-dim": "#cac99f",
+              "on-surface-variant": "#4d4635",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "tertiary-container": "#b6b58c",
+              "on-tertiary-fixed-variant": "#484828",
+              "on-primary-fixed": "#241a00",
+              "primary-container": "#d4af37",
+              "secondary-container": "#e4e2e1",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "on-secondary-fixed-variant": "#474747",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#1d1d03",
+              "secondary-fixed-dim": "#c8c6c6",
+              "secondary": "#5f5e5e",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "surface-tint": "#735c00",
+              "outline-variant": "#d0c5af",
+              "tertiary-fixed": "#e6e5b9",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-primary-container": "#554300",
+              "outline": "#7f7663",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "surface-container-low": "#f5f5dc",
+              "surface": "#fbfbe2",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fbfbe2",
+              "inverse-surface": "#303221",
+              "primary-fixed": "#ffe088",
+              "on-background": "#1b1d0e",
+              "on-surface": "#1b1d0e"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Manrope"],
+              "arabic": ["Amiri"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .silk-gradient {
+        background: linear-gradient(135deg, #735c00 0%, #d4af37 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#735c00] dark:text-[#d4af37] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-lg font-bold tracking-widest text-[#1b1d0e] dark:text-[#fbfbe2] font-headline uppercase">THE ETHEREAL ATELIER</h1>
+<button class="text-[#735c00] dark:text-[#d4af37] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Progress Stepper -->
+<div class="flex justify-between items-center mb-16 px-4">
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full silk-gradient flex items-center justify-center text-on-primary text-xs font-bold">1</div>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-primary">Cart</span>
+</div>
+<div class="flex-1 h-[1px] bg-outline-variant/30 mx-4 self-center mb-6"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant text-xs font-bold">2</div>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant/60">Shipping</span>
+</div>
+<div class="flex-1 h-[1px] bg-outline-variant/30 mx-4 self-center mb-6"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant text-xs font-bold">3</div>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant/60">Payment</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Cart & Checkout Info -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Section 1: Cart Items -->
+<section>
+<div class="flex justify-between items-baseline mb-6">
+<h2 class="text-2xl font-headline font-bold text-on-background">Your Selection</h2>
+<span class="text-label-sm font-label text-primary/60 tracking-widest uppercase">2 Items</span>
+</div>
+<div class="space-y-6">
+<!-- Item 1 -->
+<div class="flex gap-6 items-center p-4 rounded-3xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-24 h-32 rounded-2xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Luxurious silk abaya in desert sand color hanging against a minimalist beige wall with soft artistic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZwh2eeUWt7YodC0momWU7OIPG0fGOmaFtdpYQf5G7S0QWq5WUARKLDTk9WX5O3cVn3CXawzc8dqxIuJK2z5WUdyTRvororHlfbBi5-HsyQEw_ti0mN-otCMw9WIninImeSMbIJUnuXCC8fFG88B4_ym3_G3Dlz-1ocLBGRdiQz5xZ57l-T0t9go01PMPR9IZW9Oq9HLF19DzZC19XXwzOf6TDSiiOKRZZ1LNaTNRxvsH3nprolq52uGQaJfi2ymA8OWXihxCojQ"/>
+</div>
+<div class="flex-1 space-y-1">
+<div class="flex justify-between">
+<h3 class="font-headline font-semibold text-lg">Noor Silk Abaya</h3>
+<button class="text-on-surface-variant/40 hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="text-sm text-on-surface-variant/70">Desert Sand • XL</p>
+<div class="pt-4 flex justify-between items-center">
+<div class="flex items-center bg-surface-container-lowest rounded-full px-3 py-1 gap-4">
+<button class="text-primary"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-sm font-medium">1</span>
+<button class="text-primary"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<span class="font-headline font-bold text-primary">SAR 1,250</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-6 items-center p-4 rounded-3xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-24 h-32 rounded-2xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Elegant sheer chiffon hijab in a soft cream tone draped gracefully over a textured wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeXdOxN4wMNdH-DM9NimkOAnzhu04RhU7vlHvml0ZjIgjPIRqukBb-7Ofl08xkOJF9uIywrAFgXeZxDKm-Jx7utsazkO3nCWoYg5gA6asHn7ch6wFsrfM3su0-MaOqTPXAvKWo4UYFcQJ6zZVdYHs3Gs30pYAdtMOHbMaYrpi3ocoEXRvXvRC9Zl_eqfF09ajtk6HouEU2Cw7Eg82tXv5o9up10hyeAp-NMBB7Pqhd3JPHE_GBIzYa1bdj07X6g_UEr2jztNBK8w"/>
+</div>
+<div class="flex-1 space-y-1">
+<div class="flex justify-between">
+<h3 class="font-headline font-semibold text-lg">Chiffon Veil</h3>
+<button class="text-on-surface-variant/40 hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="text-sm text-on-surface-variant/70">Pearl White • Standard</p>
+<div class="pt-4 flex justify-between items-center">
+<div class="flex items-center bg-surface-container-lowest rounded-full px-3 py-1 gap-4">
+<button class="text-primary"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-sm font-medium">1</span>
+<button class="text-primary"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<span class="font-headline font-bold text-primary">SAR 180</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Shipping Address -->
+<section>
+<div class="flex justify-between items-baseline mb-6">
+<h2 class="text-2xl font-headline font-bold text-on-background">Shipping Sanctuary</h2>
+<button class="text-[10px] font-label font-bold text-primary tracking-widest uppercase">+ Add New</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 rounded-3xl bg-surface-container-lowest border border-primary/20 relative cursor-pointer">
+<div class="absolute top-4 right-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-bold text-sm mb-1 uppercase tracking-tight">Home</p>
+<p class="text-sm text-on-surface-variant/80 leading-relaxed">
+                                Sultana Al-Saud<br/>
+                                7421 King Fahad Road<br/>
+                                Al Olaya, Riyadh 12211
+                            </p>
+</div>
+<div class="p-6 rounded-3xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<p class="font-bold text-sm mb-1 uppercase tracking-tight text-on-surface-variant/60">Office</p>
+<p class="text-sm text-on-surface-variant/60 leading-relaxed">
+                                Sultana Al-Saud<br/>
+                                Kingdom Centre, Floor 42<br/>
+                                Riyadh 11564
+                            </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Payment Methods -->
+<section>
+<h2 class="text-2xl font-headline font-bold text-on-background mb-6">Exchange of Value</h2>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-5 rounded-3xl bg-surface-container-lowest border border-primary/20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">credit_card</span>
+</div>
+<div>
+<p class="font-bold text-sm uppercase">Secure Card</p>
+<p class="text-xs text-on-surface-variant/60">•••• •••• •••• 8842</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">radio_button_checked</span>
+</div>
+<div class="flex items-center justify-between p-5 rounded-3xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-[#000000] flex items-center justify-center">
+<svg class="w-6 h-6 text-white" viewbox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" fill="currentColor"></path></svg>
+</div>
+<p class="font-bold text-sm uppercase">Apple Pay</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/20">radio_button_unchecked</span>
+</div>
+<div class="flex items-center justify-between p-5 rounded-3xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant/60">payments</span>
+</div>
+<p class="font-bold text-sm uppercase text-on-surface-variant/60">Cash on Delivery</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/20">radio_button_unchecked</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary (Sticky) -->
+<div class="lg:col-span-5">
+<div class="sticky top-28 p-8 rounded-[2.5rem] bg-surface-container-low space-y-8">
+<h2 class="text-xl font-headline font-bold text-on-background">Atelier Summary</h2>
+<div class="space-y-4">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant/60">Subtotal</span>
+<span class="font-medium">SAR 1,430</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant/60">Shipping</span>
+<span class="font-medium">Complimentary</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant/60">VAT (15%)</span>
+<span class="font-medium">SAR 214.50</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-baseline">
+<span class="font-headline font-bold text-lg">Total</span>
+<span class="font-headline font-extrabold text-2xl text-primary">SAR 1,644.50</span>
+</div>
+</div>
+<div class="pt-4">
+<div class="relative mb-6">
+<input class="w-full bg-surface-container-lowest border-none rounded-full px-6 py-4 text-sm focus:ring-1 focus:ring-primary/20 placeholder:text-on-surface-variant/30" placeholder="Promo Code" type="text"/>
+<button class="absolute right-2 top-2 bottom-2 px-6 rounded-full text-[10px] font-label font-bold uppercase tracking-widest text-primary hover:bg-primary/5 transition-colors">Apply</button>
+</div>
+<button class="w-full silk-gradient py-5 rounded-full text-on-primary font-headline font-bold tracking-[0.15em] uppercase shadow-lg shadow-primary/20 active:scale-95 transition-transform">
+                            Complete Order
+                        </button>
+<p class="text-[10px] text-center mt-6 text-on-surface-variant/40 leading-relaxed uppercase tracking-widest">
+                            Secure Encrypted Transaction • The Ethereal Atelier
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md rounded-t-[24px] shadow-[0px_-10px_30px_rgba(27,29,14,0.04)] md:hidden">
+<div class="flex justify-around items-center px-8 pb-8 pt-4 w-full">
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">category</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">local_mall</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">person</span>
+</div>
+</div>
+</nav>
+<!-- Modal: Order Success (Hidden by default, shown for flow visualization) -->
+<div class="fixed inset-0 z-[100] bg-surface/95 backdrop-blur-xl flex items-center justify-center p-6 hidden">
+<div class="max-w-lg w-full text-center space-y-8">
+<div class="relative mx-auto w-32 h-32">
+<div class="absolute inset-0 silk-gradient rounded-full animate-pulse opacity-20"></div>
+<div class="absolute inset-4 silk-gradient rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-5xl">check</span>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-4xl font-headline font-extrabold text-on-background tracking-tight">An Elegant Choice.</h2>
+<p class="font-arabic text-2xl text-primary opacity-80">شكراً لاختياركم نور كوليكتيف</p>
+<p class="text-on-surface-variant/70 leading-relaxed max-w-sm mx-auto">
+                    Your order <span class="font-bold text-on-background">#NEA-88291</span> has been placed. 
+                    We are now preparing your pieces with the utmost care.
+                </p>
+</div>
+<div class="p-8 rounded-[2rem] bg-surface-container-low text-left space-y-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-primary/60">
+<span>Est. Delivery</span>
+<span>Tracking No.</span>
+</div>
+<div class="flex justify-between font-headline font-bold">
+<span>Oct 24 - Oct 26</span>
+<span>SHP-002194</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="silk-gradient py-5 rounded-full text-on-primary font-headline font-bold tracking-widest uppercase shadow-xl shadow-primary/20">
+                    Track Journey
+                </button>
+<button class="py-5 rounded-full text-primary font-headline font-bold tracking-widest uppercase hover:bg-surface-container transition-colors">
+                    Back to Atelier
+                </button>
+</div>
+</div>
+</div>
+</body></html>

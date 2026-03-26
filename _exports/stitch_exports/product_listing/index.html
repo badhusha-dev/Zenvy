@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Noor Collective | The Ethereal Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "primary": "#735c00",
+              "surface-container": "#efefd7",
+              "surface-dim": "#dbdcc3",
+              "surface-variant": "#e4e4cc",
+              "surface-container-highest": "#e4e4cc",
+              "secondary-fixed": "#e4e2e1",
+              "on-secondary-container": "#656464",
+              "inverse-on-surface": "#f2f2d9",
+              "background": "#fbfbe2",
+              "inverse-primary": "#e9c349",
+              "tertiary-fixed-dim": "#cac99f",
+              "on-surface-variant": "#4d4635",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "tertiary-container": "#b6b58c",
+              "on-tertiary-fixed-variant": "#484828",
+              "on-primary-fixed": "#241a00",
+              "primary-container": "#d4af37",
+              "secondary-container": "#e4e2e1",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "on-secondary-fixed-variant": "#474747",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#1d1d03",
+              "secondary-fixed-dim": "#c8c6c6",
+              "secondary": "#5f5e5e",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "surface-tint": "#735c00",
+              "outline-variant": "#d0c5af",
+              "tertiary-fixed": "#e6e5b9",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-primary-container": "#554300",
+              "outline": "#7f7663",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "surface-container-low": "#f5f5dc",
+              "surface": "#fbfbe2",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fbfbe2",
+              "inverse-surface": "#303221",
+              "primary-fixed": "#ffe088",
+              "on-background": "#1b1d0e",
+              "on-surface": "#1b1d0e"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Manrope"],
+              "arabic": ["Amiri"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbfbe2;
+            color: #1b1d0e;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#1b1d0e] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-lg font-bold tracking-widest text-[#1b1d0e] font-headline uppercase">THE ETHEREAL ATELIER</h1>
+<button class="text-[#1b1d0e] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Editorial Header Section -->
+<section class="mb-12 relative">
+<div class="flex flex-col items-start gap-2">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary font-bold">Curated Collection</span>
+<div class="flex items-baseline gap-4">
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background">Noor Collective</h2>
+<span class="font-arabic text-4xl md:text-6xl text-primary-container opacity-40">مجموعة نور</span>
+</div>
+<p class="max-w-md mt-4 text-secondary font-body leading-relaxed text-sm">
+                    A rhythmic dialogue between sand, silk, and sunlight. Explore our latest abayas and modest essentials designed for the modern sanctuary.
+                </p>
+</div>
+</section>
+<!-- Filters & Sorting (The Breathable Grid Approach) -->
+<section class="mb-12 space-y-8">
+<!-- Scrollable Filter Chips -->
+<div class="flex overflow-x-auto pb-4 gap-3 no-scrollbar -mx-6 px-6">
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-primary text-on-primary font-label text-xs font-semibold tracking-wider transition-all">All Pieces</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label text-xs font-semibold tracking-wider hover:bg-surface-container-highest transition-all">Abayas</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label text-xs font-semibold tracking-wider hover:bg-surface-container-highest transition-all">Hijabs</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label text-xs font-semibold tracking-wider hover:bg-surface-container-highest transition-all">Evening</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label text-xs font-semibold tracking-wider hover:bg-surface-container-highest transition-all">Essentials</button>
+</div>
+<!-- Refinement Bar -->
+<div class="bg-surface-container-low rounded-3xl p-6 flex flex-wrap items-center justify-between gap-6">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 cursor-pointer group">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="tune">tune</span>
+<span class="font-label text-xs uppercase font-bold tracking-widest text-on-surface group-hover:text-primary transition-colors">Refine</span>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-bold tracking-widest text-outline mb-1">Fabric</span>
+<select class="bg-transparent border-none p-0 font-body text-xs font-semibold focus:ring-0 cursor-pointer">
+<option>All Textures</option>
+<option>Silk</option>
+<option>Chiffon</option>
+<option>Linen</option>
+</select>
+</div>
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-bold tracking-widest text-outline mb-1">Occasion</span>
+<select class="bg-transparent border-none p-0 font-body text-xs font-semibold focus:ring-0 cursor-pointer">
+<option>Everyday</option>
+<option>Wedding</option>
+<option>Formal</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label text-[10px] text-outline uppercase tracking-tighter">84 Results</span>
+<div class="h-4 w-[1px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-2 cursor-pointer">
+<span class="font-label text-xs uppercase font-bold tracking-widest">Sort By</span>
+<span class="material-symbols-outlined text-sm" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid (Asymmetric & Editorial) -->
+<section class="grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
+<!-- Product Card 1 -->
+<div class="group relative flex flex-col">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-surface-container relative mb-6">
+<img alt="Silk Abaya" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant model in a flowing minimalist sand-colored silk abaya standing in a bright sunlit minimalist architectural space with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_HNYHFpJHBGe0NCyUKIg1P4HzX0ixEZGYjehualMqraL2yQlUVy1tiElUnTafokVO9vZbesdetrdLhHXLhrwmvnpV6efvJbw-Qbl8bRcEK5ITFYlo8mFlPKP0kkE8FmTW6AxPzLpfunKbnpUTZotZK8TLRa1SMMByapboC6kfrGp9CiAvZq4nl3-zoNQtgt4pWCbuJ0GuMgXTOkBWpipGrqQ-OKRh2XZmSdSoP9_ejGg5gzoI2aDpy6u_R17NDUP364NmY1YASw"/>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-on-primary rounded-2xl font-label text-xs font-bold tracking-widest uppercase shadow-lg">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 px-2">
+<h3 class="font-headline text-lg font-bold text-on-background tracking-tight">The Sahra Silk Abaya</h3>
+<p class="font-body text-xs text-secondary mb-2">100% Pure Mulberry Silk</p>
+<span class="font-headline text-base font-extrabold text-primary">AED 1,850</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative flex flex-col lg:mt-12">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-surface-container relative mb-6">
+<img alt="Chiffon Hijab" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up detail of high-quality pleated chiffon fabric in soft lavender grey draped elegantly over a marble pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0tqWefAYNGy2p0CxOw1aAEKwMSUM8Jb4BKYDWSvdNKalI9OGwOaK0Yl1tNvJuZeNFjbfEN4-cqJ4qQhdv0ueiLPhokPGQxw_gP2-1VpH2q2xq9noCmfPgKvuO2jLlZX5y3mNruQM29WkfTliPNDbvzS2iiKfU_cwMOD1GX2qx2GfffL_M8GRKl9kq0apYL5PiSzZY4XednkkTbzv_BPZJMggLYF7R1F--K67QNdBfsnrNARloqREIsY1ECUJvAbpBvE-Ot_9Z7w"/>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-on-primary rounded-2xl font-label text-xs font-bold tracking-widest uppercase shadow-lg">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 px-2">
+<h3 class="font-headline text-lg font-bold text-on-background tracking-tight">Pleated Chiffon Wrap</h3>
+<p class="font-body text-xs text-secondary mb-2">Signature Crepe Texture</p>
+<span class="font-headline text-base font-extrabold text-primary">AED 240</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative flex flex-col">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-surface-container relative mb-6">
+<img alt="Linen Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern woman wearing a crisp white linen modest co-ord set standing in a lush green garden with dappled sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXB_YxWBjUULbg9C57vEJNjjaS2ki9FTpsxPb6rTfYny4UZGVZ8dKihxZIbJj_eLNnTzMc-fhZofU8q4M--10BuxrAXUe7R6kqMlr2yUKD2Pj9EbSabIC128q0nArgolYQ2j5Nm_K0gkzePRE3nNrbLiVbzML7W0MOzS6kW-zfj5nLVmdowq1qmDo-lsxiziRmwSTUd2QMd_L5TF4akOJ_HYtqjlhvJTBo51m2R3h4UtX4t_HbIJGTpcT6DD_wnsNbK3pOlmrpPw"/>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-on-primary rounded-2xl font-label text-xs font-bold tracking-widest uppercase shadow-lg">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 px-2">
+<h3 class="font-headline text-lg font-bold text-on-background tracking-tight">Oasis Linen Ensemble</h3>
+<p class="font-body text-xs text-secondary mb-2">Sustainable Belgian Linen</p>
+<span class="font-headline text-base font-extrabold text-primary">AED 1,200</span>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative flex flex-col lg:-mt-12">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-surface-container relative mb-6">
+<img alt="Wedding Collection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Highly detailed luxury abaya with intricate gold embroidery and beadwork on deep charcoal silk fabric in a dimly lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD17q45Aw5AR_TpjB4lGp8JClh3xpqiRX6Fw08OaZmRXkRHrddlnFwMPExp3xgHpruytG7RDCMz6K837RawUtOTH0FFQ1RpS8-Pf_3jOA5F6Twj1h2sJhiQ6VIdS1ckcHwxsMTPg-yv-szaW5qw3tS4OsnUR_PDxQNyMQ4KpPR5KN_GMFWV4ghysmeEq1yZH-xdW7DlRdtDEMhQ_eaJA5pOCEmUaZomxSN0-6t8gw4Z59o6zytu3N2bEBbRpOpWvp1Zw4IMvB4tlQ"/>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-on-primary rounded-2xl font-label text-xs font-bold tracking-widest uppercase shadow-lg">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 px-2">
+<h3 class="font-headline text-lg font-bold text-on-background tracking-tight">The Sultanat Bridal Abaya</h3>
+<p class="font-body text-xs text-secondary mb-2">Hand-Embroidered Accents</p>
+<span class="font-headline text-base font-extrabold text-primary">AED 4,500</span>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group relative flex flex-col">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-surface-container relative mb-6">
+<img alt="Flowing Chiffon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Editorial shot of a flowing emerald green chiffon dress catching the wind against a pale desert background at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOr9QgXKZSZpSFycikDeJJR6pCT1NNTV1gO1sOFL_arKv9LLut-b7ObSBrSxoGPrlaZ0P9phjiQHhD8tjwKWOojkpsHASUB8P9Wuo2pB72k0izIxbzhaFhUd4TIkKNbGYyyQsZjMmZuzevbXwx8X8am_vEa831HddcEQ0Hdg0Fudg0G4QluedsZakUVhcebWiEeqwXlgcrkVdf7mmG7ruHj_706MZ9a1dyuphKzzYdv-0OAl-XUjG-Eo-NFPiyZdnS3wK13LT4UA"/>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-on-primary rounded-2xl font-label text-xs font-bold tracking-widest uppercase shadow-lg">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 px-2">
+<h3 class="font-headline text-lg font-bold text-on-background tracking-tight">Ethereal Chiffon Gown</h3>
+<p class="font-body text-xs text-secondary mb-2">Triple-Layered Fluidity</p>
+<span class="font-headline text-base font-extrabold text-primary">AED 2,900</span>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group relative flex flex-col lg:mt-12">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-surface-container relative mb-6">
+<img alt="Accessories" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist gold jewelry and a high-end leather handbag arranged artistically on a textured beige linen surface with sharp architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1YeN-0hDMj8iVi4LDqh2gNKlFyXHXrPyV-bc8vrGMn6VET-PyXJ3IW4X1ZtpHPF2xQ3cQJBnfEiwD7rjFNOjJwfjXhqryX3crPcCLuaeYG8T4UWtBdYC2ORThROtCoz0k1C5EwWPfE7XTIcEkB6vj2EDQtxdqvY-UF-Ckgp0uQe0L5nJBUv6DXdaUKGPQdeMFajQBeU6bTc6HQfivfg0tE8TYfbSuAWfLR9k1uN2ywVAr4088yfbg9I4fYSgnZJd9fHrIrA9bcg"/>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-on-primary rounded-2xl font-label text-xs font-bold tracking-widest uppercase shadow-lg">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 px-2">
+<h3 class="font-headline text-lg font-bold text-on-background tracking-tight">Atelier Accessory Set</h3>
+<p class="font-body text-xs text-secondary mb-2">Curated Gifting Collection</p>
+<span class="font-headline text-base font-extrabold text-primary">AED 950</span>
+</div>
+</div>
+</section>
+<!-- Pagination / Load More -->
+<div class="mt-24 mb-12 flex justify-center">
+<button class="px-12 py-4 rounded-full bg-surface-container-highest text-on-surface font-label text-xs font-bold tracking-[0.2em] uppercase hover:bg-surface-dim transition-all active:scale-95">
+                Load More Pieces
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md rounded-t-[24px] shadow-[0px_-10px_30px_rgba(27,29,14,0.04)] z-50">
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="local_mall">local_mall</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Bag</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-be-vietnam-pro text-[10px] font-medium tracking-tight mt-1">Profile</span>
+</a>
+</nav>
+<!-- Custom Floating Action (FAB Override suppressed as per shell mandate for Details/Settings but keeping subtle browse tools) -->
+</body></html>

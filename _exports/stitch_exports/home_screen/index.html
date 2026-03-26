@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "primary": "#735c00",
+              "surface-container": "#efefd7",
+              "surface-dim": "#dbdcc3",
+              "surface-variant": "#e4e4cc",
+              "surface-container-highest": "#e4e4cc",
+              "secondary-fixed": "#e4e2e1",
+              "on-secondary-container": "#656464",
+              "inverse-on-surface": "#f2f2d9",
+              "background": "#fbfbe2",
+              "inverse-primary": "#e9c349",
+              "tertiary-fixed-dim": "#cac99f",
+              "on-surface-variant": "#4d4635",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "tertiary-container": "#b6b58c",
+              "on-tertiary-fixed-variant": "#484828",
+              "on-primary-fixed": "#241a00",
+              "primary-container": "#d4af37",
+              "secondary-container": "#e4e2e1",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "on-secondary-fixed-variant": "#474747",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#1d1d03",
+              "secondary-fixed-dim": "#c8c6c6",
+              "secondary": "#5f5e5e",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "surface-tint": "#735c00",
+              "outline-variant": "#d0c5af",
+              "tertiary-fixed": "#e6e5b9",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-primary-container": "#554300",
+              "outline": "#7f7663",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "surface-container-low": "#f5f5dc",
+              "surface": "#fbfbe2",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fbfbe2",
+              "inverse-surface": "#303221",
+              "primary-fixed": "#ffe088",
+              "on-background": "#1b1d0e",
+              "on-surface": "#1b1d0e"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Be Vietnam Pro", "sans-serif"],
+              "label": ["Manrope", "sans-serif"],
+              "arabic": ["Amiri", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#1b1d0e] dark:text-[#fbfbe2] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-lg font-bold tracking-widest text-[#1b1d0e] dark:text-[#fbfbe2] font-headline uppercase">THE ETHEREAL ATELIER</span>
+</div>
+<div class="flex items-center gap-5">
+<button class="text-[#1b1d0e] dark:text-[#fbfbe2] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-[#1b1d0e] dark:text-[#fbfbe2] relative hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="text-[#1b1d0e] dark:text-[#fbfbe2] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20 pb-32">
+<!-- Hero Section -->
+<section class="px-6 mb-12">
+<div class="relative h-[500px] w-full rounded-3xl overflow-hidden group">
+<img alt="Eid Collection" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant woman in a flowing silk abaya standing in a minimalist desert architectural setting during golden hour lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj7Em0mz1NDu2_q6zesdjAeWni0ecbl8tlNwOFVLplvY5sj3fI4YjOPtvkMHYpsnwwr_L6EF2e_YFUQnvKoLIl4uhzlQAt1phRrBVWoohhEo4NH7W0s86JdgmQqrRdMsoLnNz51mc_tnkonF0QSP7icsG2UantJPfwP7NtGLl8fokkgADxKFatHWxlj4gFs3MLA6H-OEGHtWAMPztaF1Yw3dV0V-_jKFD_CcJqGe4bIIFkYFkZlF9cxz8k3P1KkHzEgILeBDRSPg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 right-10 flex flex-col items-start gap-4">
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-surface-container-lowest/80">Premium Boutique</span>
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold text-surface-container-lowest leading-tight">
+                            Eid Al-Fitr <br/> <span class="font-arabic text-6xl md:text-7xl">عيد الفطر</span>
+</h1>
+</div>
+<p class="text-surface-container-lowest/90 max-w-md font-body text-lg leading-relaxed">
+                        Embrace grace with our limited-edition Ramadan curation. Silks, linens, and hand-embroidered heritage pieces.
+                    </p>
+<button class="mt-4 px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-label font-bold text-sm tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all">
+                        Explore Collection
+                    </button>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="px-6 mb-16 overflow-hidden">
+<div class="flex justify-between items-end mb-8">
+<div>
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary font-bold">Curated Selection</span>
+<h2 class="font-headline text-3xl font-bold">Browse Essence</h2>
+</div>
+<button class="font-label text-xs tracking-widest uppercase text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all">View All</button>
+</div>
+<div class="flex gap-8 overflow-x-auto no-scrollbar pb-4 -mx-2 px-2">
+<div class="flex flex-col items-center gap-4 group cursor-pointer flex-shrink-0">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container-high transition-transform group-hover:scale-110">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-surface">
+<img alt="Abayas" class="w-full h-full object-cover" data-alt="Detailed texture of a premium black abaya with intricate gold embroidery on the sleeve" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD8YD7lcZfu_P4z13LeoSF1Y9HAuqXsOlah8fBQPC6L9vAnAQhu1TQEgvpTk2h1gN9XDkfFrrkJl5NI4i0ZCQYJ6RbNcn-oU1FAQpXQWeGVMuuJdtDKPv2QIYI3PS2WJJXwV3BuaKqbuFXOy1ZYyp8wFJkqd2sezoPFfNVo_9j2TPSdxFhXmDXCm0QZrBCVDRLvI0omb3Ym4LWaj3LSLhKhJ1MDr2hk-W5DvcO7mQuU6-_b2cE0-J1OZjQ7sO886StYmk2V4v_ZA"/>
+</div>
+</div>
+<span class="font-label text-xs font-bold tracking-widest uppercase">Abayas</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer flex-shrink-0">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container-high transition-transform group-hover:scale-110">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-surface">
+<img alt="Hijabs" class="w-full h-full object-cover" data-alt="Selection of folded silk hijabs in soft pastel desert tones arranged neatly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF1HedC84kcmTMj9Peif7bX77J0y7upfd3Nqh5MWbHby-wO2o_py8Ceyll7eZ0C4qeqqZ6KlTiB0mQ-K8lLG6puYpeK_gv7aOdL5E7fNSiyUZEC2SVmtmTIOo57Odbke1OPjou3tc_Qdy2TMPGkzMaLw1uY5NOFftkrATlsylWMxuaNMWJSilQ3pIWuVMU2vvDYIfZWmgIf9pfjDnjOj5VzcLKGMMzHBJkmkB2QpFQ74TKlVYBvso1whoZKii3_i5bDQNPikaXjQ"/>
+</div>
+</div>
+<span class="font-label text-xs font-bold tracking-widest uppercase">Hijabs</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer flex-shrink-0">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container-high transition-transform group-hover:scale-110">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-surface">
+<img alt="Thobes" class="w-full h-full object-cover" data-alt="Modern white tailored thobe hanging against a minimalist beige concrete wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXgtj-hdOfvoRRwP10QkXju0Pqes8UrqS_t6JRA8GriwM3P26hiBKx9lOl3pZZgUwlb3UItPzlaIrHC6g4sICLkmYApVEQpl80SQbFc_X2gevyjidzBq-DJwE9P4zsEqNaGBppiD1vfXstCsy_0df71tuW6S0qsL9mvNmdXhUK9j1_swCtHNVWyiPi2UIeGeTbKTpL6tjqQecM18vStl9O345g2cvTvCzv8f9d_asNWMCw2e4reNRXiSi9x5_H_YksleCFnMDVGQ"/>
+</div>
+</div>
+<span class="font-label text-xs font-bold tracking-widest uppercase">Thobes</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer flex-shrink-0">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container-high transition-transform group-hover:scale-110">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-surface">
+<img alt="Modest Dress" class="w-full h-full object-cover" data-alt="Woman in a flowy linen modest dress walking through a sun-dappled garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL_p7_bwpxEqKEF4x-fkmbDTJOBp58upSB2726AvEdxwT2iM2XyEcwZ215ulOWAEXCEIAe1JgKYjDgm-T7OGIlTKKazGszmflo4uy31z5kP8chtQdc4a6RGjQhDvleV6MHq93g5LG1H2lMytqqafVCWViMWe7obJ6tgt97hSUOVPdwkDoYJAk1VeKZXjgcTYUn3GiW9HMUovQ-Q1RULlQyR4ymAvOFOpuL944zpdzoWTOcU_aakdDHNNOS8kXEDafHfUl6KJMmrw"/>
+</div>
+</div>
+<span class="font-label text-xs font-bold tracking-widest uppercase">Modest Dress</span>
+</div>
+<div class="flex flex-col items-center gap-4 group cursor-pointer flex-shrink-0">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container-high transition-transform group-hover:scale-110">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-surface flex items-center justify-center bg-surface-container">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="more_horiz">more_horiz</span>
+</div>
+</div>
+<span class="font-label text-xs font-bold tracking-widest uppercase">Others</span>
+</div>
+</div>
+</section>
+<!-- Featured Designers -->
+<section class="mb-16 bg-surface-container-low py-16">
+<div class="px-6 mb-8">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary font-bold">The Visionaries</span>
+<h2 class="font-headline text-3xl font-bold">Artisan Collaborations</h2>
+</div>
+<div class="flex gap-6 overflow-x-auto no-scrollbar px-6">
+<!-- Designer Card 1 -->
+<div class="relative flex-shrink-0 w-72 h-96 rounded-3xl overflow-hidden group cursor-pointer">
+<img alt="Designer Layla" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Portrait of a female fashion designer in a stylish studio with fabric swatches and a mannequin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGnVRXH17a48gAsjNWfuAKgURXkM5F8s2EeIn0CPcqaJi68BpOh2YDanbDHU0UJoJaAXcZTfFMN2yQGjpG72E6AbKbvf9IBubzZUy1D-33yv-D1KdZtiHdDw8MAO17WUXoFO0Dx6nIOjWMKfHtySxnZrLIKVRVHnwbBu-kyIW8IavEMeRncqK7kSN_6e7VQuPP6qrmPtB7Il3gPvaCTpbBFgdIAFJK4WnbK8mmpBYxotVurHAvTgpJXnZSnWvDxZC2luSdocX-ow"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-surface-container-lowest">
+<p class="font-label text-[10px] tracking-widest uppercase opacity-70">Couture Lead</p>
+<h3 class="font-headline text-xl font-bold">Layla Al-Mahmoud</h3>
+</div>
+</div>
+<!-- Designer Card 2 -->
+<div class="relative flex-shrink-0 w-72 h-96 rounded-3xl overflow-hidden group cursor-pointer">
+<img alt="Designer Omar" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional male fashion designer looking at sketches in a modern bright atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfjQk0l4sbBsPRfaWA4scYvUgkQheEiOoIfHONeoTdJDoBU8528yYx_Bw8OApWVQCzHTziF0AL96MEFbXo6aG_uQ0NKti2WzQSwWL7b2rNT3UAqwsMR8m35VOPL1qk1kiPZUOB3Q0vqyFdebRaX5RnGOtNPFS8ZOTWhXnyimSTf81gpCo5ktAwADVHAxVr313IC1PDpiSgwOPpcueD_jwmQLguaHIfuU71AwrdYag0nQC81kRBFy6x8AE2TTSOWX66K-B2Ot3jyw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-surface-container-lowest">
+<p class="font-label text-[10px] tracking-widest uppercase opacity-70">Heritage Craft</p>
+<h3 class="font-headline text-xl font-bold">Omar Bin Zeid</h3>
+</div>
+</div>
+<!-- Designer Card 3 -->
+<div class="relative flex-shrink-0 w-72 h-96 rounded-3xl overflow-hidden group cursor-pointer">
+<img alt="Designer Sarah" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Young female designer working with intricate textile patterns in an airy workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdww6-1wK3Iw79GdYX7j8nBFiHuNfJfuOz3bmN9-LlE0hIx08YDEILc9gYE39i5FlWg_8kn-Wm_I-polI_a5_ytDjpWLxnWuhSQnMZQcXay-eDxeBDV1BLtYaHfT54iS7Ep8fbIfVw15dXGSlPDfMXk2VafIPN4Nh1rLZ02VU76oITcnkDinDxXKeE7fnM_r7nLOHLoMcS-JV7tmjNwwg1FAHgzLwhjCNGs797g492iUNHkNY_6CxbYrlvOfqCalaGSn8sB6gkwQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-surface-container-lowest">
+<p class="font-label text-[10px] tracking-widest uppercase opacity-70">Modern Minimalist</p>
+<h3 class="font-headline text-xl font-bold">Sarah Al-Khalifi</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Trending Products Grid -->
+<section class="px-6 mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary font-bold">Most Desired</span>
+<h2 class="font-headline text-3xl font-bold">The Trending Edit</h2>
+</div>
+<button class="font-label text-xs tracking-widest uppercase text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all">Explore Trends</button>
+</div>
+<div class="grid grid-cols-2 gap-x-4 gap-y-10">
+<!-- Product 1 -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-[3/4] rounded-3xl overflow-hidden relative bg-surface-container-low">
+<img alt="Silk Wrap Abaya" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Flowing emerald green silk abaya with a minimalist wrap waist design shown against a white studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDed8QqFZAkWit1FQXgOUGT0zPWfFYFXCJ1aFiWw6xmcvXCMiKZp8Ch4QSqTCy3Bhd0FSBYkqvfkQFhzhKumw1v3am3HiQcmXn_Xm28UjR5lZ-H6CKZ2M_jPo2S_KBx607T8NPsqnzTJXr6VSOuyFiqzLHtFyFlzH2MbF65Z4cR941MKggbJSJMoArea3N6fZrHww2yZaF9UO76j1OQ0yNMDSYmsU8FwallYeWgUfNDvq8slgrwc5YSiOj1vATQCJNRtuh4ONpVgA"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-surface-container-lowest/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline font-bold text-sm">Midnight Silk Wrap</h4>
+<div class="flex justify-between items-center">
+<span class="text-xs text-primary font-bold">QAR 1,250</span>
+<span class="text-[10px] text-on-surface-variant font-label uppercase tracking-wider">New Arrival</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col gap-4 group mt-8">
+<div class="aspect-[3/4] rounded-3xl overflow-hidden relative bg-surface-container-low">
+<img alt="Linen Modest Suit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional chic modest linen suit in sand color worn by a woman walking in a city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk6nWO6ldLGXS8OfSW-2wW6b9RGMHFWWF84Qw1c6FXkuDfMN4AJdDhlqz7qltDR0GMyTure4Z0WcbouKk48sJvB2ZO-UtkTVpPs3cLegqr3FNjxcI_RV9canDtXSS_ffrifhOLl-QkuCZRtvAiHONDv9KDJKrJGAYrUHsq3q2X09mDZAxWsu6KJBGTjez89Zczjet8doeCXGj7TR7i5DydcKg0lUhDdiQ0jnsPbSSuehnZ2aaozjOqrWyn4PpsbVK9azmskF8xGQ"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-surface-container-lowest/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline font-bold text-sm">Desert Linen Two-Piece</h4>
+<div class="flex justify-between items-center">
+<span class="text-xs text-primary font-bold">QAR 890</span>
+<span class="text-[10px] text-on-surface-variant font-label uppercase tracking-wider">Trending</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col gap-4 group -mt-8">
+<div class="aspect-[3/4] rounded-3xl overflow-hidden relative bg-surface-container-low">
+<img alt="Embroidered Hijab" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up shot of a luxurious cream hijab with delicate silver lace embroidery on the edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtjEnrFDiOIh0OF0wO75pdXrtVtFE-1qVoI4YWZ8uamlZIQ7_vV00v4q3LIVEptEdAgVAQ2PiESsucInX8Kz3oE4BvnBZBfa52K9z40SvsVBqRophGZc3prXqijqIhHqkkWMgZOqrAucMBv1HVIZNjXFzY726cLZDH_qepbrLkhTLtdDLUTEd-YedV8SbPlaGm3tt0T8MVJjJ2VCKtFIsgiCIM9zCukxQf6TkcVVsz3lE2BqtoPZ_dP6Gg6l4GdX09Xw0vcNrZjA"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-surface-container-lowest/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline font-bold text-sm">Heritage Lace Shawl</h4>
+<div class="flex justify-between items-center">
+<span class="text-xs text-primary font-bold">QAR 320</span>
+<span class="text-[10px] text-on-surface-variant font-label uppercase tracking-wider">Classic</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-[3/4] rounded-3xl overflow-hidden relative bg-surface-container-low">
+<img alt="Floral Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant modest long dress with subtle floral print on a dark navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0RsS8P8TH4JVj8r2-OsdwMtrA-Rq1xrJqJ3Qmm8xVPmlUZg0KYR-FhTegtQl8fYa0Rn9oTOppAmbJQeiSM6YXxKwQjVujQGPQfbc2KtnViNDcwgUDV5DQOFlEe1jqYJc75H_E3ci3jWIfh0bhPE3rvS1vdalFJv_Ud7KLW5zw8rH89mg9i2Irf2MF_hL97fgavRmCR2OwSYm0JgeVMqC37dltDn1zVp0O6Ryx2PnPMQsmIx6oCN_rZr9pJI6D8tEHOlDkDgGaFg"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-surface-container-lowest/80 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline font-bold text-sm">Twilight Flora Gown</h4>
+<div class="flex justify-between items-center">
+<span class="text-xs text-primary font-bold">QAR 1,540</span>
+<span class="text-[10px] text-on-surface-variant font-label uppercase tracking-wider">Exclusive</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Personalized Recommendations -->
+<section class="px-6 mb-16">
+<div class="bg-surface-container-high rounded-[2rem] p-8 relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-primary font-bold">For Sultana Al-Saud</span>
+<h2 class="font-headline text-3xl font-bold mb-6">Chosen for Your Aesthetic</h2>
+<div class="flex gap-4 overflow-x-auto no-scrollbar -mx-2 px-2">
+<div class="flex-shrink-0 w-40 flex flex-col gap-3">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-lowest">
+<img alt="Item" class="w-full h-full object-cover" data-alt="Minimalist gold jewelry piece, a delicate layered necklace on a neutral silk fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfwplBVzV3kfWf0tATmaq2ftN1Kcc-0o_tx03zrDa1wyMKGKy-oglC9c4n2g-5uSWrXYBdlCu-n6dNg24QVRp-_6pr0hgMB8YrjHE7M0m7H__g9Nmjx3Y8mx9FMZRZBk44cCTAckWE9mjHJpFy2ABZqlNjI4RweeJeKXvZTlG6fbctW2WXmpf0TM2fpQ84D461G5p_XvQ3K18oK8lSVeMd0UxJNINMu3QzxmtjhbqF95MIiH6aDxEVzF3x9uyacZLoTiGDIz5Buw"/>
+</div>
+<p class="text-[11px] font-bold leading-tight line-clamp-2">Aura Gold Layered Necklace</p>
+</div>
+<div class="flex-shrink-0 w-40 flex flex-col gap-3">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-lowest">
+<img alt="Item" class="w-full h-full object-cover" data-alt="Premium leather handbag in a muted earth tone, luxury craftsmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw2t3IJzPyth2sp_FNO_GbTzyx0JTtaCqefb2Z0tV1ssDq659xMlPRPp3m_rI4WRcgPxQ8w-trws9TIWvDcp2EBzfQoWOMwmBzdpojySIEMNDL4I1wFDTbzQGLHGeh-iC1862UvvZwpAaEJzmgGTZpx19JclippKLtbW0mXb63WV6qM2r2KldKduGj2XAWvJIFbPQd2RT4hV4Z2xdaUdRqE-Nwf3Ho0nr0taNm9Pi60eU-XdN4Aq3P3sxkgTuUzoXVHrsFav1Qjg"/>
+</div>
+<p class="text-[11px] font-bold leading-tight line-clamp-2">Nobile Leather Tote</p>
+</div>
+<div class="flex-shrink-0 w-40 flex flex-col gap-3">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-lowest">
+<img alt="Item" class="w-full h-full object-cover" data-alt="Soft cashmere shawl in a deep burgundy shade draped beautifully" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWUtJfr4aMJ9P4PeizcFnnz7i8TDGJIo1KhWAsQC8UK6vCIkLqBi2hv0ZIi4tCXGPUTOcPnf2U5LiXOkLT2NaH-nUabAQFc1za9V74EKz7IxyqGlKuW6LwcUTUuweSoZdrLsI4z1do8OWFRTJTCK9bTswhUOpr96qU7KxzD2QeZbtM8NJJvgGE-hljbldbOhmON_hcNuc-9swq_hTYyWPhUJjX8Md2FhoQj_7qJwix0simmr_-aUQnyuwzKTj1vtWbxq9_yc-Xeg"/>
+</div>
+<p class="text-[11px] font-bold leading-tight line-clamp-2">Kashmir Winter Wrap</p>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md rounded-t-[24px] shadow-[0px_-10px_30px_rgba(27,29,14,0.04)]">
+<div class="flex justify-around items-center px-8 pb-8 pt-4 w-full">
+<button class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 font-be-vietnam-pro text-[10px] font-medium tracking-tight hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 font-be-vietnam-pro text-[10px] font-medium tracking-tight hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 font-be-vietnam-pro text-[10px] font-medium tracking-tight hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="local_mall">local_mall</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#1b1d0e]/40 dark:text-[#fbfbe2]/40 font-be-vietnam-pro text-[10px] font-medium tracking-tight hover:text-[#735c00] transition-colors active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+</body></html>

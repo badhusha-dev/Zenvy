@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&amp;family=Be+Vietnam+Pro:wght@100;300;400;500;700&amp;family=Amiri:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#484828",
+              "surface": "#fbfbe2",
+              "surface-dim": "#dbdcc3",
+              "on-tertiary-container": "#474727",
+              "primary-fixed-dim": "#e9c349",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e4e4cc",
+              "on-secondary-container": "#656464",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1b1d0e",
+              "surface-container": "#efefd7",
+              "secondary-fixed-dim": "#c8c6c6",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#574500",
+              "error-container": "#ffdad6",
+              "tertiary": "#60603e",
+              "surface-container-low": "#f5f5dc",
+              "primary-fixed": "#ffe088",
+              "primary-container": "#d4af37",
+              "tertiary-container": "#b6b58c",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-primary-container": "#554300",
+              "on-primary-fixed": "#241a00",
+              "on-error-container": "#93000a",
+              "primary": "#735c00",
+              "tertiary-fixed-dim": "#cac99f",
+              "background": "#fbfbe2",
+              "tertiary-fixed": "#e6e5b9",
+              "outline": "#7f7663",
+              "outline-variant": "#d0c5af",
+              "secondary-container": "#e4e2e1",
+              "on-tertiary-fixed": "#1d1d03",
+              "inverse-surface": "#303221",
+              "error": "#ba1a1a",
+              "surface-tint": "#735c00",
+              "surface-bright": "#fbfbe2",
+              "on-secondary-fixed-variant": "#474747",
+              "secondary-fixed": "#e4e2e1",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#e9c349",
+              "on-background": "#1b1d0e",
+              "surface-container-high": "#eaead1",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f2f2d9",
+              "secondary": "#5f5e5e",
+              "on-surface-variant": "#4d4635",
+              "surface-variant": "#e4e4cc"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Manrope"],
+              "arabic": ["Amiri"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<button class="text-[#1b1d0e] dark:text-[#fbfbe2] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-['Manrope'] tracking-[0.2em] uppercase text-xl font-bold text-[#1b1d0e] dark:text-[#fbfbe2]">THE ETHEREAL ATELIER</h1>
+<button class="text-[#1b1d0e] dark:text-[#fbfbe2] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto">
+<!-- Page Header Section -->
+<section class="mb-12">
+<div class="flex items-baseline justify-between mb-2">
+<h2 class="font-headline text-4xl font-light tracking-tight text-on-surface">My Orders</h2>
+<span class="font-arabic text-2xl text-primary/40" dir="rtl">طلباتي</span>
+</div>
+<p class="font-body text-secondary text-sm tracking-wide">Track and manage your recent atelier acquisitions.</p>
+</section>
+<!-- Order List -->
+<div class="flex flex-col gap-8">
+<!-- Order Card 1: Processing -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-[0px_20px_40px_rgba(27,29,14,0.04)] transition-transform duration-300 hover:scale-[1.01]">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-1">Order #EA-92841</p>
+<p class="font-body text-sm text-on-surface font-medium">Placed on Oct 24, 2023</p>
+</div>
+<div class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-primary">Processing</span>
+</div>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 mb-6">
+<div class="flex-shrink-0 w-24 h-32 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up of a high-end cream silk modest dress with intricate embroidery detail in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJLFu5ORjhKbOvwhRSxnbPZdunAXM_rDXnUfFqEIo2GUu1wwbrBOAn8q8mgFKyfm-RauhtYyG4R4zRtw2VZWVzUhXTcEAijvvpEnR0eGKUmPIurDJdD9MfZ4n1p1vSvFVZENBMTlYYBvO-6d1y00WuXhfApC5dMIRXDKnJthfziLRMpDhqSDbj_uM1C65qZAsdluQCcGmZrmt8sA2WJartc4CnjtVQA106ltOqPievx3uE7z4wmIePlmeDWpLCq6nKBj95lumg5w"/>
+</div>
+<div class="flex-shrink-0 w-24 h-32 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Detail of a handmade leather handbag in tan with gold-tone hardware on a minimalist pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZow5j90LfOGKk7lWI77lnPgW_JZKcVvGcuM-PMrkGU9-aFLo7VAbXSR-BXMMHRuvic2CaIVTcYaDI_1ox3KM2VMrD13-bPjBMrLUyp3_D5TCwyCCPlLMfncy753qRVYJDzC6kqygAdpXEkGt0OTaB2MdXB-TMnPQvAlJYP4pGdBUOs8QqEl7LtvdGwfQh3Q0smCV2l76yO17ACX3rvGtubqzzIqjfyhRNcA3FfddLwy5TPWsFmJiZ7jI0x9SpOOxCMLKBN974FA"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<p class="font-body text-sm text-secondary">2 Items • <span class="text-on-surface font-semibold">$1,450.00</span></p>
+<button class="font-label text-xs font-bold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity">View Details</button>
+</div>
+</div>
+<!-- Order Card 2: Shipped -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-[0px_20px_40px_rgba(27,29,14,0.04)] transition-transform duration-300 hover:scale-[1.01]">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-1">Order #EA-88102</p>
+<p class="font-body text-sm text-on-surface font-medium">Placed on Oct 12, 2023</p>
+</div>
+<div class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-container/10 border border-tertiary/10">
+<span class="material-symbols-outlined text-sm text-tertiary">local_shipping</span>
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-tertiary">Shipped</span>
+</div>
+</div>
+<div class="flex gap-4 mb-6">
+<div class="w-24 h-32 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of a woman wearing a flowing emerald green abaya against a desert sunset background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHdKvt8VpOp-DthyhjifV9p9rZPwjVpfrGKwzICDhMgAFDGFHFTtsUtSavzIkjEA8qbRD_nXhtG0ECr05VA_nLQAxqTNYconJoVJ5LcIXEkUQ56L3x2_aRmmE97of3I8ZkcOz5K6pRJu_q6tXVGxGjzrIEebOnh7ItfDUPcOn5U8phUfQgdCM_ufT46HTTe-OpNrUyDh0fMY8n1wZHlQOydm6ofW6zZGSdNVu2Sgw4hxqMjS0LU8HeiZgNBRQxeIJu6NuduhGUA"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline text-lg font-light tracking-tight">Silk Emerald Abaya</h4>
+<p class="font-body text-xs text-secondary mt-1">Size: Custom • Qty: 1</p>
+<p class="font-body text-xs text-primary mt-2">Arriving by Oct 30</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<p class="font-body text-sm text-secondary">Total Paid: <span class="text-on-surface font-semibold">$890.00</span></p>
+<div class="flex gap-4">
+<button class="font-label text-xs font-bold uppercase tracking-widest text-secondary hover:opacity-70 transition-opacity">Track</button>
+<button class="font-label text-xs font-bold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity">Details</button>
+</div>
+</div>
+</div>
+<!-- Order Card 3: Delivered -->
+<div class="bg-surface-container-low/50 rounded-3xl p-6 transition-transform duration-300 hover:scale-[1.01]">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-1">Order #EA-77293</p>
+<p class="font-body text-sm text-on-surface font-medium">Placed on Sep 28, 2023</p>
+</div>
+<div class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-on-surface/5">
+<span class="material-symbols-outlined text-sm text-on-surface/60">check_circle</span>
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-on-surface/60">Delivered</span>
+</div>
+</div>
+<div class="flex gap-4 mb-6 opacity-80">
+<div class="w-24 h-32 rounded-2xl overflow-hidden bg-surface-container grayscale-[20%]">
+<img class="w-full h-full object-cover" data-alt="Minimalist top-down view of a designer perfume bottle on a textured sand surface with elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA95pvdBfI_YlqAtocqYIn8TjXyKW3IR_QRaU5ho39QZHtJGUg1rM5G1Gzu146CJH9K1wqMBcLP6vcHdWDsb09YDY37QDWQN7dI3vZqbDKGc6oZkJQwGy3a12od2Dqj050zH7fogQp4GoszjyYERpC48m-zWTjZxR1t25fPiqAxZH94lNZna_jrNtGvwHBRCTktSPfPUJwJycegMstzbvovbB79Q64BHZuRuQFZ75XW7Mz7uitzT8w8719NHFVEbWGblUhGjhNgbw"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline text-lg font-light tracking-tight text-on-surface/70">Oud Al-Sahara Parfum</h4>
+<p class="font-body text-xs text-secondary mt-1">100ml • Qty: 1</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<p class="font-body text-sm text-secondary">Completed Purchase</p>
+<button class="flex items-center gap-2 font-label text-xs font-bold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-sm">refresh</span>
+                        Buy Again
+                    </button>
+</div>
+</div>
+</div>
+<!-- Help Section -->
+<div class="mt-20 p-8 rounded-3xl bg-surface-container flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary/30 mb-4">support_agent</span>
+<h3 class="font-headline text-xl font-light mb-2">Need assistance with an order?</h3>
+<p class="font-body text-sm text-secondary mb-6 max-w-md">Our atelier concierges are available 24/7 to assist with tailoring adjustments, shipping inquiries, or returns.</p>
+<button class="px-8 py-3 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-xs font-bold uppercase tracking-widest shadow-lg shadow-primary/20">Contact Concierge</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-xl rounded-t-[24px] shadow-[0px_-10px_40px_rgba(27,29,14,0.04)] flex justify-around items-center h-20 px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors" href="#">
+<span class="material-symbols-outlined">category</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors" href="#">
+<span class="material-symbols-outlined">straighten</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b1d0e]/50 dark:text-[#fbfbe2]/50 hover:text-[#735c00] transition-colors" href="#">
+<span class="material-symbols-outlined">view_in_ar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] after:content-[''] after:w-1 after:h-1 after:bg-[#735c00] after:rounded-full after:mt-1 scale-110" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+</a>
+</nav>
+</body></html>
